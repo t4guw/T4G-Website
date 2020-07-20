@@ -1,0 +1,72 @@
+.card {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.3s;
+    width: 100%;
+    height: 280px;
+    border-radius: 10px; 
+    background-color: rgb(60, 43, 99);    
+} 
+p, h1, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    flex-wrap: wrap;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.profile-picture {
+    position: relative;
+    width: 12%;
+    height: 56%;
+    top: 20%;
+    left: 6%;
+    border-radius: 8px;
+
+} 
+#student-bio {
+    border-color: white;
+    background-color: rgb(88, 78, 145);
+    border-radius: 15px;
+    width: 92%;
+    height: 100px;
+    padding: 8px 8px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    flex-wrap: wrap;   
+}
+.container-student {
+    position: relative;
+    margin: 40px 0px 40px 0px;
+    
+}
+.container-student-info {
+    position: absolute;   
+    top: 1%; 
+    left: 22%; 
+}
+
+.contact-box {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #B7A57A;
+    
+}
+
+.alumni-list {
+    position: fixed;
+    margin: 40px 0px 40px 0px;
+}
+
+#contact-alignment {
+    position: relative;
+    padding: 8px 8px;
+    margin: 20px 0px 20px 0px;
+    color: white;
+    
+}
