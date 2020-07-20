@@ -59,7 +59,7 @@ h2 {
 }
 
 .alumni-list {
-    position: fixed;
+    position: relative;
     margin: 40px 0px 40px 0px;
 }
 
