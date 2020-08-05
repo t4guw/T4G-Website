@@ -43,7 +43,7 @@
     .top-nav{
         top: 0;
         overflow: hidden;
-        position: fixed;
+        position: relative;
         width: 100%;
     }
     .top-nav li{
