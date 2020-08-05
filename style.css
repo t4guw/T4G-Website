@@ -31,6 +31,7 @@
     .hero-text, h2{
         padding-top: 10px;
         font-size: 40px;
+        margin: 10px 40px 10px 40px;
     }
 
     #title, h1{
@@ -158,7 +159,7 @@
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
         transition: 0.3s;
         width: 100%;
-        height: 280px;
+        height: 260px;
         border-radius: 10px; 
         margin: 5px 0px 0px 0px;
         background-color: rgb(60, 43, 99);    
@@ -191,6 +192,7 @@
         flex-wrap: wrap;  
         font-size: 16px;
         margin: 5px 0px 5px 0px;
+        padding: 20px 20px 20px 20px;
     }
     .container-student {
         display: inline-flexbox;
@@ -210,7 +212,7 @@
         width: 280px;
         height: 60px;
         border-radius: 15px;
-        margin: 2px 0px 2px 0px;
+        margin: 10px 0px 10px 0px;
         background-color: #B7A57A;
         
     }
@@ -230,13 +232,17 @@
     
     .alumni-list {
         position: relative;
-        margin: 40px 0px 40px 0px;
+        margin: 50px 0px 40px 0px;
     }
     
     #contact-alignment {
         position: relative;
         padding: 8px 8px;
         margin: 5px 0px 5px 0px;
+    }
+    .page-intro {
+        font-size: 20px;
+        margin: 10px 40px 10px 40px;
     }
 
 
@@ -290,7 +296,10 @@
     }
     #student-bio {
         height: 200%;
-        font-size: 1px;
+        font-size: 16px;
+    }
+    .student-name  {
+        font-size: 18px;
     }
 
 }
@@ -306,6 +315,10 @@
     .footer-text, a {
         font-size: 32px;
     }
+    #student-bio {
+        height: 300%;
+        font-size: 20px;
+    }
 
 }
     @media only screen and (min-width: 1440px) {
@@ -318,6 +331,10 @@
         .top-nav #logo{
             width: 8%;
             margin-left: 0px;
+        }
+        #student-bio {
+            height: 200%;
+            font-size:18px;
         }
     }
 
@@ -408,7 +425,7 @@
     }
     .container-student .card {
         width: 100%;
-        height:135px;
+        height:130px;
         margin: 5px 0px 5px 0px;
     }
     #student-bio {
@@ -429,6 +446,7 @@
         width: 120px;
         height: 30px;
         border-radius: 10px;
+        margin-top: 40px;
     }
     .profile-picture {
         display: inline-block;
@@ -442,6 +460,7 @@
     }
     h2 {
         font-size: 18px;
+        margin: 10px 20px 10px 20px;
     }
 }
 
