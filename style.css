@@ -8,7 +8,7 @@
     }
 
     .hero-image{
-        background-image: url("top.png");
+        background-image: url("img/top.png");
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
@@ -131,7 +131,7 @@
     }
 
     .hero-image2 {
-        background-image: url("bottom.png");
+        background-image: url("img/bottom.png");
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
