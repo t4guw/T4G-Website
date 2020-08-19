@@ -99,6 +99,13 @@
         padding-right: 15px;
         border-radius: 15%;
     }
+    div.gallery {
+        transition: all .2s ease-in-out;
+    }
+
+    div.gallery:hover {
+        transform: scale(1.02);
+    }
     div.caption{
         font-size: 25px;
         padding: 15px;
