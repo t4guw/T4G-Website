@@ -31,12 +31,14 @@
     }
 
     .hero-text, h2{
+        font-family: 'Noto Sans', sans-serif;
         padding-top: 10px;
         font-size: 40px;
     }
 
     #title, h1{
         text-decoration: none;
+        font-family: 'Noto Sans JP', sans-serif;
         font-size: 75px;
         border: 3px white solid;
         border-radius: 25px ;
