@@ -2,6 +2,7 @@
     body, html{
         height: 100%;
         margin: 0;
+        font-family: 'Sintony',sans-serif;
     }
     header h1{
         font-size:45px;
@@ -35,8 +36,10 @@
     }
 
     #title, h1{
+        text-decoration: none;
         font-size: 75px;
-        border: 5px white solid;
+        border: 10px white solid;
+        border-radius: 25px ;
         padding: 30px;
         line-height: 0.85;
     }
@@ -57,12 +60,16 @@
 
     .top-nav a{
         color: white;
+        font-family: "Play",sans-serif;
         text-decoration: none;
-        font-size: 35px;
+        font-size: 18px;
         margin-right: 30px;
         padding-left:10px;
         padding-right: 10px;
         float: right;
+    }
+    .top-nav a:hover{
+        color: goldenrod;
     }
     .block1{
         margin: 150px 0 150px 0;
