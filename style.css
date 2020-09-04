@@ -58,22 +58,15 @@
     .top-nav #logo{
         float:left;
         margin-left:30px;
-<<<<<<< HEAD
         margin-top: -30px;
     }
-=======
     }
 
->>>>>>> master
     .top-nav a{
         color: white;
         font-family: "Play",sans-serif;
         text-decoration: none;
-<<<<<<< HEAD
         font-size: 20px;
-=======
-        font-size: 18px;
->>>>>>> master
         margin-right: 30px;
         padding-left:10px;
         padding-right: 10px;
@@ -81,11 +74,8 @@
     }
     .top-nav a:hover{
         color: goldenrod;
-<<<<<<< HEAD
         transform: scale(1.2);
         text-shadow: 2px 2px 10px;
-=======
->>>>>>> master
     }
     .block1{
         margin: 150px 0 150px 0;
@@ -257,7 +247,6 @@
     }
 
 
-<<<<<<< HEAD
 
 /* ====== Styles for Students.html ===== */
     .container-student {
@@ -341,7 +330,6 @@
 
 
 =======
->>>>>>> master
 /*****************************************************/
 /* Medium devices (landscape tablets, 768px and up) */
 /*****************************************************/
@@ -390,7 +378,6 @@
         margin: 0px;
         padding: 0px;
     }
-<<<<<<< HEAD
     .student-info {
         margin: auto 10px auto 56px;
     }
@@ -416,7 +403,6 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1024px) {
->>>>>>> master
     .hero-text h2{
         font-size: 30px;
     }
@@ -426,7 +412,6 @@
     .footer-text, a {
         font-size: 32px;
     }
-<<<<<<< HEAD
     .container-student img{
         width: 180px;
         height: auto;
@@ -434,11 +419,6 @@
     }
 }
     @media only screen and (min-device-width: 1440px) {
-=======
-
-}
-    @media only screen and (min-width: 1440px) {
->>>>>>> master
         .hero-text h2{
             font-size: 40px;
         }
@@ -448,7 +428,6 @@
         .top-nav #logo{
             width: 8%;
             margin-left: 0px;
-<<<<<<< HEAD
         }   
         .container-student img{
             width: 250px;
@@ -457,12 +436,6 @@
         }
     }
 
-=======
-        }
-    }
-
-
->>>>>>> master
 /****************************************/
 /*******CSS FOR SMART SCREEN SIZES*******/
 /****************************************/
@@ -550,7 +523,6 @@
 
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 414px) {
     div.page-intro p, .contact-box a {
         font-size: 12px;
@@ -618,5 +590,3 @@
     }
 }
 
-=======
->>>>>>> master
