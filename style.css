@@ -242,6 +242,61 @@
         padding: 150px 0px 0px 0px;
     }
 
+    /* Projects CSS */
+
+    .root_projects_divider {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+    }
+
+    .project_divider {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+      display: flex;
+    }
+
+    .project_img {
+      border-radius: 35px;
+      width: 300px;
+    }
+    
+    .project_description_divider {
+      position: relative;
+      border-radius: 25px;
+      padding: 20px;
+      background-color: lightgray;
+    }
+
+    .project_description_divider h2 {
+      font-family: sans-serif;
+      margin: 15px;
+      padding-left: 5px;
+    }
+
+    .project_description_divider p {
+      font-family: sans-serif;
+      padding-left: 20px;
+    }
+
+    #button_form {
+      padding-left: 20px;
+    }
+
+    #button_form button {
+      color: white;
+      font-family: sans-serif;
+      border-radius: 35px;
+      width: 200px;
+      height: 35px;
+      background-color: orange;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
 
 /*****************************************************/
 /* Medium devices (landscape tablets, 768px and up) */
@@ -406,4 +461,3 @@
     }
 
 }
-
