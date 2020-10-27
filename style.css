@@ -16,6 +16,7 @@
         background-position: center;
         background-size: cover;
         position: relative;
+        margin-bottom: 65px;
     }
 
     .hero-text{
@@ -118,9 +119,9 @@
     }
 
     .block2{
+        border-radius: 25px;
         background: #32174d;
-        margin-top: 250px;
-        margin-bottom: 250px;
+        margin: 200px 50px 200px 50px;
     }
 
     .block2 .gallery img{
@@ -132,7 +133,7 @@
         float: right;
         background-color: #50498a;
         color:  white;
-        margin: 40px 0px 40px 0px;
+        margin: 40px 25px 40px 25px;
         padding: 50px;
         font-size: 20px;
         border-radius: 25px;
@@ -172,7 +173,7 @@
         perspective: 1000px;
         padding: 200px 0 200px 0;
     }
-
+    /* Figure out how to keep front and flip same size and remove weird shadow */
     .flip_card_inner {
         position: relative;
         width: 100%;
@@ -218,7 +219,6 @@
         padding: 50px 30px 50px 30px;
         font-size: 25px;
     }
-
 
     .hero-image2 {
         background-image: url("img/bottom.png");
@@ -323,64 +323,114 @@
         text-align: justify;
     }
 
+    .blockA{
+        margin: 40px 0px 65px 0px;
+    }
+    hr{
+        width: 90%;
+    }
+    .blockA h3{
+
+        color: #32174d;
+        line-height: 8px;
+        font-size: 18px;
+    }
+    .blockA h2{
+        margin-left: 4.5% ;
+        color: #32174d;
+        font-size: 24px;
+    }
+    div.name{
+        color: #32174d;
+        width: 185px;
+        margin: 10px;
+    }
+
+    .name h3:hover{
+        color: #50498a;
+        /*color: goldenrod;*/
+        transform: scale(1.2);
+        text-shadow: 2px 2px 10px;
+    }
+
+    .name-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        text-align: center;
+
+    }
+
 /* ===== End of styles for Students.html ===== */
 /*============================================*/
 
 
 /*===============Projects CSS Start================*/
-.root_projects_divider {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
+    .root_projects_divider {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 
-.project_divider {
-    position: relative;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    padding: 50px 30px 50px 30px;
-    display: flex;
-}
+    .project_divider {
+        position: relative;
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        padding: 50px 30px 50px 30px;
+        display: flex;
+    }
 
-.project_img {
-    border-radius: 12%;
-    padding: 0px 30px 0px 30px;
-    width: 300px;
-}
+    .project_img {
+        border-radius: 12%;
+        padding: 0px 30px 0px 30px;
+        width: 300px;
+    }
 
-.project_description_divider {
-    position: relative;
-    border-radius: 25px;
-    padding: 15px;
-    background-color: lightgray;
-}
+    .project_description_divider {
+        position: relative;
+        border-radius: 25px;
+        padding: 15px;
+        background-color: lightgray;
+    }
 
-.project_description_divider h2 {
-    font-family: sans-serif;
-    margin: 15px;
-    padding-left: 5px;
-}
+    .project_description_divider h2 {
+        font-family: sans-serif;
+        margin: 15px;
+        padding-left: 5px;
+        font-size: 24px;
+    }
 
-.project_description_divider p {
-    font-family: sans-serif;
-    padding-left: 20px;
-}
+    .project_description_divider p {
+        font-family: sans-serif;
+        padding-left: 20px;
+    }
 
-#button_form {
-    padding-left: 20px;
-}
+    #button_form {
+        padding-left: 20px;
+    }
 
-#button_form button {
-    color: white;
-    font-family: sans-serif;
-    border-radius: 35px;
-    width: 200px;
-    height: 35px;
-    background-color: orange;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
+    #button_form button {
+        color: white;
+        font-family: sans-serif;
+        border-radius: 35px;
+        width: 200px;
+        height: 35px;
+        background-color: orange;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+
+    .page-intro a{
+        color: #32174d;
+    }
+    .page-intro a:hover{
+        transform: scale(1.2);
+        text-shadow: 2px 2px 10px;
+    }
+
 /*===============Projects CSS End================*/
 
 
@@ -400,7 +450,7 @@
     div.container-student img {
         width: 70px;
         height: 70px;
-        padding-top: 20px 0px;
+        padding: 20px 0px;
         border-radius: 8px;
     }
     .student-info {
@@ -622,6 +672,10 @@
 }
 
 @media (min-width: 768px) {
+    .top-nav a {
+        font-size: 22px;
+        padding: 5px;
+    }
     .page-intro {
         margin: 10px 40px 10px 40px;
     }
@@ -664,6 +718,36 @@
         margin-left: 35px;
         margin-right: 4px;  
     }
+    .flip_card {
+        background-color: transparent;
+        width: 165px;
+        height: 300px;
+        perspective: 1000px;
+        padding: 65px 20px 65px 0px;
+    }
+    .flip_card_front p, .flip_card_back p {
+        font-size: 22px;
+    }
+    .flip_card_back p {
+        font-size: 15px;
+        padding: 22px 12px 22px 12px;
+    }
+    .hero-image2{
+        margin-top: 65px;
+    }
+    .block3 .info-text2 {
+        margin: 65px 0px 65px 0px;
+    }
+    .block1 {
+        margin: 65px 0px 65px 0px;
+    }
+    .hero-image {
+        height: 40%;
+    }
+    .hero-image2 {
+        height: 40%;
+    }
+
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1024px) {
@@ -842,10 +926,10 @@
         font-size: 24px;
     }
     .hero-image2 .container{
-        padding: 0px;
+        padding-top: 65px;
         width: 100%;
         height: 280px;
-        margin:0px 0px 0px 0px;
+        margin:65px 0px 0px 0px;
     }
     div.footer-text{
         margin-top: 10px;
@@ -855,6 +939,9 @@
     }
     .footer-text a {
         font-size: 18px;
+    }
+    .flip_card {
+        padding: 65px 0px 65px 0px;
     }
 
 }
