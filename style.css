@@ -81,8 +81,8 @@
     }
     .block1 h2{
         margin: 60px 0px 20px 110px;
-
     }
+
     .container{
         display: flex;
         flex-wrap: wrap;
@@ -102,7 +102,7 @@
         height: auto;
         padding-left:15px;
         padding-right: 15px;
-        border-radius: 15%;
+        border-radius: 10%;
     }
     div.gallery {
         transition: all .2s ease-in-out;
@@ -244,7 +244,7 @@
         align-content: space-between;
         padding: 150px 0px 0px 0px;
     }
-
+/*=======================================*/
 /* ====== Styles for Students.html ===== */
     .container-student {
         position: relative;
@@ -324,6 +324,70 @@
     }
 
 /* ===== End of styles for Students.html ===== */
+/*============================================*/
+
+
+/*===============Projects CSS Start================*/
+.root_projects_divider {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.project_divider {
+    position: relative;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    padding: 50px 30px 50px 30px;
+    display: flex;
+}
+
+.project_img {
+    border-radius: 12%;
+    padding: 0px 30px 0px 30px;
+    width: 300px;
+}
+
+.project_description_divider {
+    position: relative;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: lightgray;
+}
+
+.project_description_divider h2 {
+    font-family: sans-serif;
+    margin: 15px;
+    padding-left: 5px;
+}
+
+.project_description_divider p {
+    font-family: sans-serif;
+    padding-left: 20px;
+}
+
+#button_form {
+    padding-left: 20px;
+}
+
+#button_form button {
+    color: white;
+    font-family: sans-serif;
+    border-radius: 35px;
+    width: 200px;
+    height: 35px;
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+/*===============Projects CSS End================*/
+
+
+
+
+
+
 
 
 /*****************************************************/
@@ -712,7 +776,6 @@
 
 /****************************************/
 /*******CSS FOR SMART SCREEN SIZES*******/
-/****************************************/
 @media (max-width: 600px) {
     #title, h1{
         font-size:32px;
