@@ -1,413 +1,460 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Sintony', sans-serif;
+}
 
-    body, html{
-        height: 100%;
-        margin: 0;
-        font-family: 'Sintony',sans-serif;
-    }
-    header h1{
-        font-size:45px;
-    }
-
-
-    /*  Styling for Header at top of all pages*/
-    .hero-image{
-        background-image: url("img/top.png");
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-        margin-bottom: 165px;
-    }
-
-    .hero-text{
-        width: 80%;
-        text-align: center;
-        position:absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        word-wrap: normal;
-        line-height: 0.20;
-    }
-
-    .hero-text, h2{
-        font-family: 'Noto Sans', sans-serif;
-        padding-top: 10px;
-        font-size: 40px;
-    }
-
-    #title, h1{
-        text-decoration: none;
-        font-family: 'Noto Sans JP', sans-serif;
-        font-size: 75px;
-        border: 3px white solid;
-        border-radius: 25px ;
-        padding: 30px;
-        line-height: 0.85;
-    }
-
-    /* Styling for navigation*/
-    .top-nav{
-        top: 0;
-        overflow: hidden;
-        width: 100%;
-    }
-    .top-nav li{
-        display: inline;
-    }
-
-    .top-nav #logo{
-        float:left;
-        margin-left:30px;
-        margin-top: -20px;
-    }
-
-    .top-nav a{
-        color: white;
-        font-family: "Play",sans-serif;
-        text-decoration: none;
-        font-size: 20px;
-        margin-right: 30px;
-        padding-left:10px;
-        padding-right: 10px;
-        float: right;
-    }
-    .top-nav a:hover{
-        color: goldenrod;
-        transform: scale(1.2);
-        text-shadow: 2px 2px 10px;
-    }
-    .block1{
-        margin: 150px 0 150px 0;
-    }
-    .block1 h2{
-        margin: 60px 0px 20px 110px;
-    }
-
-    /* Styling for content blocks */
-    .container{
-
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-content: space-between;
-        padding: 50px 0px 50px 0px;
-
-    }
-    div.gallery {
-        /*margin: 10px;*/
-        float: left;
-        width: 280px;
-    }
-
-    div.gallery img{
-        width: 100%;
-        height: auto;
-        padding-left:15px;
-        padding-right: 15px;
-        border-radius: 10%;
-    }
-    div.gallery {
-        transition: all .2s ease-in-out;
-    }
-
-    div.gallery:hover {
-        transform: scale(1.02);
-    }
-    div.caption{
-        font-size: 25px;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .block2{
-        border-radius: 25px;
-        background: #32174d;
-        margin: 200px 50px 200px 50px;
-    }
-
-    .block2 .gallery img{
-        margin: 40px 0px 40px 0px;
-    }
-
-    .bio-text{
-        width: 60%;
-        float: right;
-        background-color: #50498a;
-        color:  white;
-        margin: 40px 25px 40px 25px;
-        padding: 50px;
-        font-size: 20px;
-        border-radius: 25px;
-    }
-    .bio-text a{
-        font-size: 20px;
-        color: skyblue;
-    }
-    .bio-text a:hover{
-        font-size: 21px;
-        color: deeplightskyblue;
-    }
-
-    .block3 .info-text1{
-        font-size: 50px;
-        text-align: center;
-        line-height: 1.3;
-        margin: 100px 0px 100px 0px;
-        color: white;
-    }
-
-    .block3 {
-        background: #32174d;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    .block3 .info-text2{
-        font-size: 35px;
-        align-content: center;
-        line-height: 1.3;
-        margin: 100px 0px 100px 0px;
-        color: white;
-    }
-
-    .block4 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-
-    }
-
-    .flip_card{
-        background-color: transparent;
-        width: 300px;
-        height: 525px;
-        perspective: 1000px;
-        padding: 200px 0 200px 0;
-    }
-    /************ Figure out how to keep front and flip same size and remove weird shadow *************/
-    .flip_card_inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        border-radius: 35px;
-        transition:transform 1.2s;
-        transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-    .flip_card:hover .flip_card_inner {
-        transform: rotateY(180deg);
-    }
-    .flip_card_front, .flip_card_back{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
-    .flip_card_front{
-        background-color: #50498a;
-        border-radius: 35px;
-        color: black;
-        padding: 30px;
-    }
-    .flip_card_front p{
-        font-size: 35px;
-        color: goldenrod;
-    }
-    .flip_card_front img{
-        width: 100%;
-        height: auto;
-    }
-
-    .flip_card_back{
-        background-color: #32174d;
-        border-radius: 35px;
-        color: white;
-        transform: rotateY(180deg);
-    }
-    .flip_card_back p{
-        padding: 50px 30px 50px 30px;
-        font-size: 25px;
-    }
-
-    .hero-image2 {
-        background-image: url("img/bottom.png");
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: relative;
+header h1 {
+    font-size: 45px;
+}
 
 
-    }
-    .footer-text, a {
-        font-size: 40px;
-        color: white;
-        text-decoration: none;
-    }
+/*  Styling for Header at top of all pages*/
 
-    .hero-image2 .container{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-content: space-between;
-        padding: 150px 0px 0px 0px;
-        margin-top: 100px;
-    }
+.hero-image {
+    background-image: url("img/top.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 165px;
+}
+
+.hero-text {
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    word-wrap: normal;
+    line-height: 0.20;
+}
+
+.hero-text,
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+#title,
+h1 {
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 75px;
+    border: 3px white solid;
+    border-radius: 25px;
+    padding: 30px;
+    line-height: 0.85;
+}
+
+
+/* Styling for navigation*/
+
+.top-nav {
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.top-nav li {
+    display: inline;
+}
+
+.top-nav #logo {
+    float: left;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+.top-nav a {
+    color: white;
+    font-family: "Play", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+}
+
+.top-nav a:hover {
+    color: goldenrod;
+    transform: scale(1.2);
+    text-shadow: 2px 2px 10px;
+}
+
+.block1 {
+    margin: 150px 0 150px 0;
+}
+
+.block1 h2 {
+    margin: 60px 0px 20px 110px;
+}
+
+
+/* Styling for content blocks */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-between;
+    padding: 50px 0px 50px 0px;
+}
+
+div.gallery {
+    /*margin: 10px;*/
+    float: left;
+    width: 280px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10%;
+}
+
+div.gallery {
+    transition: all .2s ease-in-out;
+}
+
+div.gallery:hover {
+    transform: scale(1.02);
+}
+
+div.caption {
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+.block2 {
+    border-radius: 25px;
+    background: #32174d;
+    margin: 200px 50px 200px 50px;
+}
+
+.block2 .gallery img {
+    margin: 40px 0px 40px 0px;
+}
+
+.bio-text {
+    width: 60%;
+    float: right;
+    background-color: #50498a;
+    color: white;
+    margin: 40px 25px 40px 25px;
+    padding: 50px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.bio-text a {
+    font-size: 20px;
+    color: skyblue;
+}
+
+.bio-text a:hover {
+    font-size: 21px;
+    color: deeplightskyblue;
+}
+
+.block3 .info-text1 {
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.3;
+    margin: 100px 0px 100px 0px;
+    color: white;
+}
+
+.block3 {
+    background: #32174d;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.block3 .info-text2 {
+    font-size: 35px;
+    align-content: center;
+    line-height: 1.3;
+    margin: 100px 0px 100px 0px;
+    color: white;
+}
+
+.block4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flip_card {
+    background-color: transparent;
+    width: 300px;
+    height: 525px;
+    perspective: 1000px;
+    padding: 200px 0 200px 0;
+}
+
+
+/************ Figure out how to keep front and flip same size and remove weird shadow *************/
+
+.flip_card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 35px;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip_card:hover .flip_card_inner {
+    transform: rotateY(180deg);
+}
+
+.flip_card_front,
+.flip_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip_card_front {
+    background-color: #50498a;
+    border-radius: 35px;
+    color: black;
+    padding: 30px;
+}
+
+.flip_card_front p {
+    font-size: 35px;
+    color: goldenrod;
+}
+
+.flip_card_front img {
+    width: 100%;
+    height: auto;
+}
+
+.flip_card_back {
+    background-color: #32174d;
+    border-radius: 35px;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip_card_back p {
+    padding: 50px 30px 50px 30px;
+    font-size: 25px;
+}
+
+.hero-image2 {
+    background-image: url("img/bottom.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.footer-text,
+a {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.hero-image2 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-between;
+    padding: 150px 0px 0px 0px;
+    margin-top: 100px;
+}
+
+
 /*================================================*/
+
+
 /* =========== Styles for Students.html ========= */
-    .container-student {
-        position: relative;
-        display: block;
-        background-color: rgb(60, 43, 99);  
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-        transition: 0.3s;
-        margin: 40px auto;
-        padding: 40px 40px;
-        height: 150px;
-    }
-    .container-student img {
-        display: inline-block;
-        position: relative;
-        border-radius: 8px; 
-        margin: 0px 20px;
-        width: 200px;
-        height: 150px;
-    }
-    .student-name {
-        font-weight: bold;
-        font-size: 22px;
-        color: white;
-        padding: 0;
-        margin: 0;
-    }
-    .student-info {
-        position: relative; 
-        display: inline-block;  
-        margin-top: -25%;
-        margin-bottom: 8px;
-        margin-left: 25%;
-        font-size: 18px;   
-    }
-    .student-bio {
-        border-color: white;
-        background-color: rgb(88, 78, 145);
-        border-radius: 15px;
-        text-align: justify;
-        color: white;
-        padding: 20px 8px;
-        margin-top:8px;
-    }
 
-    .contact-box {
-        position: relative;
-        border-radius: 8px;
-        background-color: #B7A57A;  
-        padding:0px 8px;
-        width: 250px;
-        
-    }
-    .contact-box p {
-        padding: 4px 4px;
-        font-size: 18px;
-        font-weight: bold;
-        color: white; 
-    }
-    .contact-box a {
-        font-size: 18px;
-        font-weight: normal;
-        color: rgb(237, 237, 237);
-    }
-    a:hover { 
-        color: #3C2B63;
-    }
-    .alumni-list {
-        position: relative;
-        margin: 50px 0px 40px 0px;
-    }
-    .page-intro {
-        margin: 10px 40px 10px 40px;
-    }
-    .page-intro p {
-        font-size: 18px;
-        text-align: justify;
-    }
+.blockA .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(49, 35, 112);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    margin: 2% 4.5%;
+}
 
-    .blockA{
-        margin: 40px 0px 65px 0px;
-    }
-    hr{
-        width: 90%;
-    }
-    .blockA h3{
+.student-img img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 10px 20px;
+}
 
-        color: #32174d;
-        line-height: 8px;
-        font-size: 18px;
-    }
-    .blockA h2{
-        margin-left: 4.5% ;
-        color: #32174d;
-        font-size: 24px;
-    }
-    div.name{
-        color: #32174d;
-        width: 185px;
-        margin: 10px;
-    }
+.student-img {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding: 10px 10px;
+    align-items: center;
+}
 
-    .name h3:hover{
-        color: #50498a;
-        /*color: goldenrod;*/
-        transform: scale(1.2);
-        text-shadow: 2px 2px 10px;
-    }
+.student-info {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    padding: 10px;
+    margin-right: 20px;
+}
 
-    .name-container{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: flex-end;
-        text-align: center;
+.student-info .student-name {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
 
-    }
+.student-bio {
+    border-color: white;
+    background-color: rgb(88, 78, 145);
+    border-radius: 8px;
+    text-align: justify;
+    color: white;
+    padding: 8px;
+}
+
+
+/*
+.contact-box {
+    display: block;
+    border-radius: 8px;
+    background-color: #B7A57A;
+    padding: 0px 8px;
+    width: auto;
+}
+
+.contact-box p {
+    padding: 4px 4px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-box a {
+    font-weight: normal;
+    color: rgb(237, 237, 237);
+}
+
+.contact-box a:hover {
+    color: #3C2B63;
+}
+*/
+
+.blockA {
+    margin: 40px 0px 65px 0px;
+}
+
+hr {
+    width: 90%;
+}
+
+.blockA h3 {
+    color: #32174d;
+    line-height: 8px;
+    font-size: 18px;
+}
+
+.blockA h2 {
+    margin-left: 4.5%;
+    color: #32174d;
+    font-size: 24px;
+}
+
+div.name {
+    color: #32174d;
+    width: 185px;
+    margin: 10px;
+}
+
+div .page-intro {
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+}
+
+.name h3:hover {
+    color: #50498a;
+    /*color: goldenrod;*/
+    transform: scale(1.2);
+    text-shadow: 2px 2px 10px;
+}
+
+.name-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    text-align: center;
+}
+
+
 /* ======= End of styles for Students.html ===== */
+
+
 /*==============================================*/
 
 
 /*=================================================*/
+
+
 /*===============Projects CSS Start================*/
-.projectBlock{
+
+.projectBlock {
     border-radius: 25px;
     display: inline;
     margin: 200px 50px 200px 50px;
 }
-.projectBlock .gallery img{
+
+.projectBlock .gallery img {
     float: left;
 }
-.project-text{
+
+.project-text {
     width: 60%;
     float: right;
     background-color: lightgray;
-    color:  white;
+    color: white;
     padding: 20px;
     font-size: 20px;
     border-radius: 25px;
 }
-.pageLinks li{
+
+.pageLinks li {
     display: inline;
 }
-.pageLinks li a{
+
+.pageLinks li a {
     display: inline;
     flex-display: row;
     flex-wrap: wrap;
@@ -418,36 +465,40 @@
     background-color: white;
     padding: 20px 100px 20px 100px;
 }
-div.projectBlock .gallery{
+
+div.projectBlock .gallery {
     float: left;
 }
 
-.project-text p{
+.project-text p {
     background-color: lightgray;
-    color:  black;
+    color: black;
     font-size: 20px;
     border-radius: 25px;
 }
-project-text h3{
+
+project-text h3 {
     font-family: sans-serif;
     margin: 15px;
     padding-left: 5px;
     font-size: 24px;
 }
+
 div.steps {
-    width:75%;
-    margin-left:auto;
+    width: 75%;
+    margin-left: auto;
     margin-right: auto;
-
 }
-div.steps p{
+
+div.steps p {
     line-height: 18px;
-
 }
-div.steps li{
+
+div.steps li {
     padding: 5px 20px 5px 20px;
 }
-div.steps a{
+
+div.steps a {
     color: #32174d;
     font-size: 18px;
 }
@@ -456,38 +507,51 @@ div.steps a:hover {
     color: #32174d;
     font-size: 16px;
 }
-div.scroll-up a{
-    color:  #32174d;
+
+div.scroll-up a {
+    color: #32174d;
     background-color: #B7A57A;
     padding: 15px;
     margin-left: 40px;
     border-radius: 10px;
 }
-div.scroll-up a:hover{
-    color:  goldenrod;
-    background-color: #3C2B63;
 
+div.scroll-up a:hover {
+    color: goldenrod;
+    background-color: #3C2B63;
 }
+
+
 /*===============Projects CSS End================*/
+
+
 /*===============================================*/
 
 
 /*==============================================*/
+
+
 /* ===== Start of styles for Events.html ======= */
 
+.events h2 {
+    padding: 150px;
+}
 
-    .events h2 {
-        padding: 150px;
 
-    }
 /* ==============  Events CSS End ============== */
+
+
 /*==============================================*/
 
 
+/*****************************************************/
+
+
+/* Small devices (potrait, max 320px) */
+
 
 /*****************************************************/
-/* Small devices (potrait, max 320px) */
-/*****************************************************/
+
 @media (max-width: 320px) {
     .student-bio {
         padding: 8px 8px;
@@ -498,44 +562,11 @@ div.scroll-up a:hover{
         padding: 20px 0px;
         border-radius: 8px;
     }
-    .student-info {
-        padding-top: 10px;
-    }
-    .contact-box {
-        padding: 0px 4px;
-        width: 100%;
-    }
-
 }
+
 @media (max-width: 414px) {
-    .page-intro {
-        margin: 10px 8px 10px 8px;
-    }
-    .page-intro h2 {
-        font-size: 12px;
-    }
-    .student-info {
-        margin-top: -110px;
-        margin-left: 30%;
-        padding-top:10px;
-        padding-right: 4px;
-        font-size: 8px;  
-    }
-    .contact-box {
-        padding-left: 4px;
-        width: 55%;
-    }
-    .contact-box a, .contact-box p, .page-intro p{
-        font-size: 8px;
-    }
-    .student-name {
-        font-size: 10px;
-    }
     .container-student {
-        padding-left: 4px;
-        padding-right: 4px;
-        padding-top: 10px;
-        padding-bottom: 0px;
+        padding: 10px 4px;
         height: auto;
     }
     .student-bio {
@@ -546,33 +577,11 @@ div.scroll-up a:hover{
         height: 80px;
         margin-top: 20px;
         margin-left: 8px;
-        margin-right: 4px; 
+        margin-right: 4px;
     }
 }
 
 @media (max-width: 500px) and (min-width: 414px) {
-    .page-intro {
-        margin: 10px 8px 10px 8px;
-    }
-    .page-intro h2 {
-        font-size: 14px;
-    }
-    .student-info {
-        margin-top: -140px;
-        margin-left: 30%;
-        padding-right: 4px;
-        font-size: 12px;  
-    }
-    .contact-box {
-        width: 60%;
-        padding-left: 2px;
-    }
-    .contact-box a, .contact-box p, .page-intro p{
-        font-size: 12px;
-    }
-    .student-name {
-        font-size: 14px;
-    }
     .student-bio {
         padding: 8px 8px;
     }
@@ -585,35 +594,11 @@ div.scroll-up a:hover{
         height: 100px;
         margin-top: 40px;
         margin-left: 8px;
-        margin-right: 4px;    
+        margin-right: 4px;
     }
 }
+
 @media (max-width: 600px) and (min-width: 500px) {
-    .page-intro {
-        margin: 10px 10px 10px 10px;
-    }
-    .page-intro h2 {
-        font-size: 14px;
-    }
-    .student-info {
-        margin-top: -28%;
-        margin-left: 30%;
-        padding-right: 4px;
-        font-size: 12px;  
-    }
-    .student-bio {
-        padding: 8px 8px;
-    }
-    .contact-box {
-        width: 52%;
-        padding-left: 2px;
-    }
-    .contact-box a, .contact-box p, .page-intro p{
-        font-size: 12px;
-    }
-    .student-name {
-        font-size: 14px;
-    }
     .container-student {
         padding: 10px 4px;
         height: auto;
@@ -625,86 +610,67 @@ div.scroll-up a:hover{
         margin-left: 8px;
         margin-right: 4px;
     }
-
 }
+
+
 /*****************************************************/
+
+
 /* Medium devices (landscape tablets, 768px and up) */
+
+
 /*****************************************************/
-@media  (max-width: 768px) and (min-width: 600px){
-    .top-nav a{
+
+@media (max-width: 768px) and (min-width: 600px) {
+    .top-nav a {
         font-size: 28px;
         padding: 8px;
     }
-    #title, h1{
+    #title,
+    h1 {
         font-size: 45px;
     }
-    .top-nav #logo{
+    .top-nav #logo {
         margin-left: -20px;
     }
     .hero-text h2 {
         font-size: 24px;
     }
-    div.gallery{
+    div.gallery {
         padding-bottom: 50px;
     }
-    div.caption{
+    div.caption {
         font-size: 22px;
         padding: 5px;
     }
-    .footer-text, a{
+    .footer-text,
+    a {
         font-size: 24px;
     }
-    .hero-image2 .container{
+    .hero-image2 .container {
         padding: 70px 0px 0px 0px;
     }
-    .block3 .info-text2{
+    .block3 .info-text2 {
         font-size: 24px;
     }
-    .block3 .info-text1{
+    .block3 .info-text1 {
         font-size: 24px;
     }
-    .bio-text{
+    .bio-text {
         width: 75%;
         margin: 0px 0px 40px 0px;
     }
-    .hero-text, h2{
+    .hero-text,
+    h2 {
         font-size: 35px;
         padding: 0px;
     }
-    div.gallery{
+    div.gallery {
         margin: 0px;
         padding: 0px;
     }
-    .page-intro {
-        margin: 10px 40px 10px 40px;
-    }
-    .page-intro h2 {
-        font-size: 24px;
-    }
-    .student-info {
-        margin-top: -28%;
-        margin-left: 30%;
-        padding-right: 35px;
-        font-size: 14px;  
-    }
-    .student-bio {
-        padding: 8px 8px;
-    }
-    .contact-box {
-        width: 52%;
-        padding-left: 2px;
-    }
-    .contact-box a, .contact-box p, .page-intro p{
-        font-size: 14px;
-    }
-    .student-name {
-        font-size: 16px;
-    }
     .container-student {
-        padding-top: 30px;
-        padding-bottom: 0px;
-        padding-left: 4px;
-        padding-right: 4px;
+        padding: 10px 4px;
         height: auto;
     }
     .container-student img {
@@ -713,25 +679,20 @@ div.scroll-up a:hover{
         margin-top: 25px;
         margin-left: 35px;
         margin-right: 4px;
-        
     }
-
-    .project-text{
+    .project-text {
         width: 50%;
     }
-
-    .pageLinks li a{
+    .pageLinks li a {
         padding: 20px 45px 20px 45px;
     }
-    div.projectBlock .gallery{
+    div.projectBlock .gallery {
         width: 250px;
     }
-
-    .project-text p{
+    .project-text p {
         font-size: 18px;
     }
-
-    project-text h3{
+    project-text h3 {
         margin: 5px;
     }
 }
@@ -741,39 +702,8 @@ div.scroll-up a:hover{
         font-size: 22px;
         padding: 5px;
     }
-    .page-intro {
-        margin: 10px 40px 10px 40px;
-    }
-    .page-intro h2 {
-        font-size: 26px;
-    }
-    .contact-box a, .contact-box p, .page-intro p{
-        font-size: 18px;
-    }
-    .student-info {
-        margin-top: -32%;
-        margin-left: 30%;
-        padding-right: 35px;
-        padding-top: 42px;
-        font-size: 14px;  
-    }
-    .student-bio {
-        padding: 8px 8px;
-        font-size: 18px;
-    }
-    .contact-box {
-        width: 52%;
-        padding-left: 2px;
-    }
-    
-    .student-name {
-        font-size: 20px;
-    }
     .container-student {
-        padding-top: 30px;
-        padding-bottom: 0px;
-        padding-left: 4px;
-        padding-right: 4px;
+        padding: 10px 4px;
         height: auto;
     }
     .container-student img {
@@ -781,7 +711,7 @@ div.scroll-up a:hover{
         height: 160px;
         margin-top: 25px;
         margin-left: 35px;
-        margin-right: 4px;  
+        margin-right: 4px;
     }
     .flip_card {
         background-color: transparent;
@@ -790,14 +720,15 @@ div.scroll-up a:hover{
         perspective: 1000px;
         padding: 65px 20px 65px 0px;
     }
-    .flip_card_front p, .flip_card_back p {
+    .flip_card_front p,
+    .flip_card_back p {
         font-size: 22px;
     }
     .flip_card_back p {
         font-size: 15px;
         padding: 22px 12px 22px 12px;
     }
-    .hero-image2{
+    .hero-image2 {
         margin-top: 65px;
     }
     .block3 .info-text2 {
@@ -812,109 +743,44 @@ div.scroll-up a:hover{
     .hero-image2 {
         height: 40%;
     }
-
 }
+
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+
 @media only screen and (min-width: 1024px) {
-    .hero-text h2{
+    .hero-text h2 {
         font-size: 30px;
     }
-    div.gallery{
+    div.gallery {
         width: 220px;
     }
-    .footer-text, a {
+    .footer-text,
+    a {
         font-size: 32px;
-    }
-    .page-intro {
-        margin: 10px 40px 10px 40px;
-    }
-    .page-intro h2 {
-        font-size: 32px;
-    }
-    .contact-box a, .contact-box p, .page-intro p{
-        font-size: 26px;
-    }
-    .student-info {
-        margin-top: -30%;
-        margin-left: 25%;
-        padding-right: 35px;
-        padding-top: 42px;
-        font-size: 26px;  
-    }
-    .student-bio {
-        padding: 8px 8px;
-        font-size: 26px;
-    }
-    .contact-box {
-        width: 50%;
-        padding-left: 2px;
-    }
-    
-    .student-name {
-        font-size: 30px;
-        
-    }
-    .container-student {
-        padding-top: 20px;
-        padding-bottom: 10px;
-        padding-left: 4px;
-        padding-right: 4px;
-        height: auto;
     }
     .container-student img {
         width: 200px;
         height: 200px;
         margin-top: 90px;
         margin-left: 35px;
-        margin-right: 4px;  
+        margin-right: 4px;
     }
 }
 
+
 /*========Jumbo Screen Sizes =============*/
+
 @media only screen and (min-width: 1440px) {
-    .hero-text h2{
+    .hero-text h2 {
         font-size: 40px;
     }
-    div.gallery{
+    div.gallery {
         width: 300px;
     }
-    .top-nav #logo{
+    .top-nav #logo {
         width: 8%;
         margin-left: 0px;
-    }
-    .page-intro {
-        margin: 10px 40px 10px 40px;
-    }
-    .page-intro h2 {
-        font-size: 32px;
-    }
-    .contact-box a, .contact-box p, .page-intro p{
-        font-size: 26px;
-    }
-    .student-info {
-        margin-top: -32%;
-        margin-left: 25%;
-        padding-right: 35px;
-        padding-top: 42px;
-        font-size: 26px;
-    }
-    .student-bio {
-        padding: 8px 8px;
-        font-size: 26px;
-    }
-    .contact-box {
-        width: 40%;
-        padding-left: 2px;
-    }
-    .student-name {
-        font-size: 28px;
-    }
-    .container-student {
-        padding-top: 10px;
-        padding-bottom: 0px;
-        padding-left: 4px;
-        padding-right: 10px;
-        height: auto;
     }
     .container-student img {
         width: 250px;
@@ -927,84 +793,86 @@ div.scroll-up a:hover{
 
 
 /****************************************/
+
+
 /*******CSS FOR SMART SCREEN SIZES*******/
+
 @media (max-width: 600px) {
-    #title, h1{
-        font-size:32px;
+    #title,
+    h1 {
+        font-size: 32px;
         border: 2px white solid;
         margin: 80px 0px 20px 0px;
         padding: 10px;
         line-height: 0.85;
     }
-    .hero-image{
+    .hero-image {
         width: 100%;
         height: 280px;
-        margin:0px 0px 0px 0px;
-
+        margin: 0px 0px 0px 0px;
     }
-    .hero-text h2{
+    .hero-text h2 {
         font-size: 18px;
         line-height: 1.1;
     }
-    .top-nav a{
+    .top-nav a {
         font-size: 14px;
         margin: 5px;
-        padding:5px;
+        padding: 5px;
     }
-    .top-nav #logo{
+    .top-nav #logo {
         width: 10%;
         height: 10%;
         margin-top: -15px;
         margin-left: 8px;
     }
-    .block1 h2{
+    .block1 h2 {
         font-size: 22px;
         text-align: center;
         margin: 40px 0px 45px 0px;
     }
-    div.gallery{
+    div.gallery {
         /*margin-top: 25px;*/
         width: 280px;
         margin-bottom: 50px;
     }
-    div.caption{
+    div.caption {
         font-size: 20px;
         padding: 5px;
     }
-    .block1 .container{
+    .block1 .container {
         padding: 0px;
         margin: 0px 35px 0px 20px;
     }
-    .block2 .gallery{
+    .block2 .gallery {
         margin: 20px 40px 20px 15px;
     }
-    .block2 .bio-text{
+    .block2 .bio-text {
         margin: 0px 20px 20px 20px;
         font-size: 18px;
     }
-    .bio-text h2{
+    .bio-text h2 {
         font-size: 25px;
     }
-    .block3 .info-text1{
+    .block3 .info-text1 {
         font-size: 30px;
         margin: 0px;
     }
-    .block3 .info-text2{
+    .block3 .info-text2 {
         margin: 50px 20px 0px 30px;
         font-size: 24px;
     }
-    .hero-image2 .container{
+    .hero-image2 .container {
         padding-top: 65px;
         width: 100%;
         height: 280px;
-        margin:65px 0px 0px 0px;
+        margin: 65px 0px 0px 0px;
     }
-    .hero-image2{
+    .hero-image2 {
         width: 100%;
         height: 50%;
     }
-
-    div.footer-text{
+    div.footer-text {
         margin-top: 10px;
         text-align: center;
         font-size: 18px;
