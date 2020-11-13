@@ -268,7 +268,7 @@
     .container-student {
         position: relative;
         display: block;
-        background-color: rgb(60, 43, 99);  
+        background-color: rgb(60, 43, 99);
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
         transition: 0.3s;
         margin: 40px auto;
@@ -278,7 +278,7 @@
     .container-student img {
         display: inline-block;
         position: relative;
-        border-radius: 8px; 
+        border-radius: 8px;
         margin: 0px 20px;
         width: 200px;
         height: 150px;
@@ -291,12 +291,12 @@
         margin: 0;
     }
     .student-info {
-        position: relative; 
-        display: inline-block;  
+        position: relative;
+        display: inline-block;
         margin-top: -25%;
         margin-bottom: 8px;
         margin-left: 25%;
-        font-size: 18px;   
+        font-size: 18px;
     }
     .student-bio {
         border-color: white;
@@ -311,23 +311,23 @@
     .contact-box {
         position: relative;
         border-radius: 8px;
-        background-color: #B7A57A;  
+        background-color: #B7A57A;
         padding:0px 8px;
         width: 250px;
-        
+
     }
     .contact-box p {
         padding: 4px 4px;
         font-size: 18px;
         font-weight: bold;
-        color: white; 
+        color: white;
     }
     .contact-box a {
         font-size: 18px;
         font-weight: normal;
         color: rgb(237, 237, 237);
     }
-    a:hover { 
+    a:hover {
         color: #3C2B63;
     }
     .alumni-list {
@@ -422,18 +422,32 @@ div.projectBlock .gallery{
     float: left;
 }
 
-.project-text p{
+.project-text p {
     background-color: lightgray;
     color:  black;
     font-size: 20px;
     border-radius: 25px;
 }
-project-text h3{
+.project-text h3 {
+    color: black;
     font-family: sans-serif;
-    margin: 15px;
-    padding-left: 5px;
-    font-size: 24px;
+    font-size: 30px;
 }
+
+.project-text a {
+  color: blue;
+  font-size: 20px;
+
+}
+
+.project-text a:hover {
+  color: #09bffb;
+}
+
+.project-text a:visited {
+  color: purple;
+}
+
 div.steps {
     width:75%;
     margin-left:auto;
@@ -504,7 +518,7 @@ div.scroll-up a:hover{
       border-radius: 35px;
       width: 300px;
     }
-    
+
     .project_description_divider {
       position: relative;
       border-radius: 25px;
@@ -520,10 +534,6 @@ div.scroll-up a:hover{
 
     .project_description_divider p {
       font-family: sans-serif;
-      padding-left: 20px;
-    }
-
-    #button_form {
       padding-left: 20px;
     }
 
@@ -574,7 +584,7 @@ div.scroll-up a:hover{
         margin-left: 30%;
         padding-top:10px;
         padding-right: 4px;
-        font-size: 8px;  
+        font-size: 8px;
     }
     .contact-box {
         padding-left: 4px;
@@ -601,7 +611,7 @@ div.scroll-up a:hover{
         height: 80px;
         margin-top: 20px;
         margin-left: 8px;
-        margin-right: 4px; 
+        margin-right: 4px;
     }
 }
 
@@ -616,7 +626,7 @@ div.scroll-up a:hover{
         margin-top: -140px;
         margin-left: 30%;
         padding-right: 4px;
-        font-size: 12px;  
+        font-size: 12px;
     }
     .contact-box {
         width: 60%;
@@ -640,7 +650,7 @@ div.scroll-up a:hover{
         height: 100px;
         margin-top: 40px;
         margin-left: 8px;
-        margin-right: 4px;    
+        margin-right: 4px;
     }
 }
 @media (max-width: 600px) and (min-width: 500px) {
@@ -654,7 +664,7 @@ div.scroll-up a:hover{
         margin-top: -28%;
         margin-left: 30%;
         padding-right: 4px;
-        font-size: 12px;  
+        font-size: 12px;
     }
     .student-bio {
         padding: 8px 8px;
@@ -740,7 +750,7 @@ div.scroll-up a:hover{
         margin-top: -28%;
         margin-left: 30%;
         padding-right: 35px;
-        font-size: 14px;  
+        font-size: 14px;
     }
     .student-bio {
         padding: 8px 8px;
@@ -768,7 +778,7 @@ div.scroll-up a:hover{
         margin-top: 25px;
         margin-left: 35px;
         margin-right: 4px;
-        
+
     }
 
     .project-text{
@@ -810,7 +820,7 @@ div.scroll-up a:hover{
         margin-left: 30%;
         padding-right: 35px;
         padding-top: 42px;
-        font-size: 14px;  
+        font-size: 14px;
     }
     .student-bio {
         padding: 8px 8px;
@@ -820,7 +830,7 @@ div.scroll-up a:hover{
         width: 52%;
         padding-left: 2px;
     }
-    
+
     .student-name {
         font-size: 20px;
     }
@@ -836,7 +846,7 @@ div.scroll-up a:hover{
         height: 160px;
         margin-top: 25px;
         margin-left: 35px;
-        margin-right: 4px;  
+        margin-right: 4px;
     }
     .flip_card {
         background-color: transparent;
@@ -894,7 +904,7 @@ div.scroll-up a:hover{
         margin-left: 25%;
         padding-right: 35px;
         padding-top: 42px;
-        font-size: 26px;  
+        font-size: 26px;
     }
     .student-bio {
         padding: 8px 8px;
@@ -904,10 +914,10 @@ div.scroll-up a:hover{
         width: 50%;
         padding-left: 2px;
     }
-    
+
     .student-name {
         font-size: 30px;
-        
+
     }
     .container-student {
         padding-top: 20px;
@@ -921,7 +931,7 @@ div.scroll-up a:hover{
         height: 200px;
         margin-top: 90px;
         margin-left: 35px;
-        margin-right: 4px;  
+        margin-right: 4px;
     }
 }
 
