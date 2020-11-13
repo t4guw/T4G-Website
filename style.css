@@ -104,10 +104,10 @@
         width: 280px;
     }
 
-    div.gallery img{
+    div.gallery img {
         width: 100%;
         height: auto;
-        padding-left:15px;
+        padding-left: 15px;
         padding-right: 15px;
         border-radius: 10%;
     }
@@ -394,6 +394,7 @@
 }
 .projectBlock .gallery img{
     float: left;
+    padding: inherit;
 }
 .project-text{
     width: 60%;
@@ -414,7 +415,7 @@
     justify-content: space-evenly;
     align-content: center;
     color: #32174d;
-    font-size: 24px;
+    font-size: 48px;
     background-color: white;
     padding: 20px 100px 20px 100px;
 }
@@ -422,18 +423,32 @@ div.projectBlock .gallery{
     float: left;
 }
 
-.project-text p{
+.project-text p {
     background-color: lightgray;
     color:  black;
     font-size: 20px;
     border-radius: 25px;
 }
-project-text h3{
+.project-text h3 {
+    color: black;
     font-family: sans-serif;
-    margin: 15px;
-    padding-left: 5px;
-    font-size: 24px;
+    font-size: 30px;
 }
+
+.project-text a {
+  color: blue;
+  font-size: 20px;
+
+}
+
+.project-text a:hover {
+  color: #09bffb;
+}
+
+.project-text a:visited {
+  color: purple;
+}
+
 div.steps {
     width:75%;
     margin-left:auto;
@@ -483,6 +498,57 @@ div.scroll-up a:hover{
 /* ==============  Events CSS End ============== */
 /*==============================================*/
 
+
+    /* Projects CSS */
+
+    .root_projects_divider {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+    }
+
+    .project_divider {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+      display: flex;
+    }
+
+    .project_img {
+      border-radius: 35px;
+      width: 300px;
+    }
+
+    .project_description_divider {
+      position: relative;
+      border-radius: 25px;
+      padding: 20px;
+      background-color: lightgray;
+    }
+
+    .project_description_divider h2 {
+      font-family: sans-serif;
+      margin: 15px;
+      padding-left: 5px;
+    }
+
+    .project_description_divider p {
+      font-family: sans-serif;
+      padding-left: 20px;
+    }
+
+    #button_form button {
+      color: white;
+      font-family: sans-serif;
+      border-radius: 35px;
+      width: 200px;
+      height: 35px;
+      background-color: orange;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
 
 
 /*****************************************************/
@@ -645,6 +711,7 @@ div.scroll-up a:hover{
         font-size: 24px;
     }
     div.gallery{
+        padding-top: 50px;
         padding-bottom: 50px;
     }
     div.caption{
@@ -965,6 +1032,7 @@ div.scroll-up a:hover{
     div.gallery{
         /*margin-top: 25px;*/
         width: 280px;
+        padding-top: 50px;
         margin-bottom: 50px;
     }
     div.caption{
