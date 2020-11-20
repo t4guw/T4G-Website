@@ -343,7 +343,7 @@
     }
 
     .blockA{
-        margin: 40px 0px 65px 0px;
+        margin: 40px 0px 10px 0px;
     }
     hr{
         width: 90%;
@@ -357,6 +357,11 @@
     .blockA h2{
         margin-left: 4.5% ;
         color: #32174d;
+        font-size: 24px;
+    }
+    .blockA p{
+        margin-left: 5% ;
+        color: #000000;
         font-size: 24px;
     }
     div.name{
@@ -492,7 +497,7 @@ div.scroll-up a:hover{
 
 
     .events h2 {
-        padding: 150px;
+        padding: 10px;
 
     }
 /* ==============  Events CSS End ============== */
