@@ -124,7 +124,7 @@
         text-align: center;
     }
 
-    .block2{
+    .block2 {
         border-radius: 25px;
         background: #32174d;
         margin: 200px 50px 200px 50px;
@@ -132,6 +132,43 @@
 
     .block2 .gallery img{
         margin: 40px 0px 40px 0px;
+    }
+
+    .block-event {
+        border-radius: 25px;
+        background: #32174d;
+        margin: 100px 50px 100px 50px;
+    }
+
+    .event-date {
+        width: 40%;
+        float: left;
+        color:  black;
+        background-color: #FFFFFF;
+        color:  white;
+        margin: 40px 25px 40px 25px;
+        padding: 50px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    .event-gallery {
+      display: inline-block;
+    }
+    .event-text{
+        width: 60%;
+        float: right;
+        background-color: #50498a;
+        color:  white;
+        margin: 40px 25px 40px 25px;
+        padding: 50px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    h2.events-header {
+      border: 3px;
+      text-align: center;
     }
 
     .bio-text{
@@ -1043,6 +1080,7 @@ div.scroll-up a:hover{
         padding: 0px;
         margin: 0px 35px 0px 20px;
     }
+
     .block2 .gallery{
         margin: 20px 40px 20px 15px;
     }
