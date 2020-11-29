@@ -84,30 +84,28 @@
         margin: 150px 0 150px 0;
     }
     .block1 h2{
-        margin: 60px 0px 20px 110px;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     /* Styling for content blocks */
     .container{
-
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
         align-content: space-between;
         padding: 50px 0px 50px 0px;
-
     }
     div.gallery {
         /*margin: 10px;*/
         float: left;
         width: 280px;
     }
-
-    div.gallery img {
+    div.gallery img{
         width: 100%;
         height: auto;
-        padding-left: 15px;
+        padding-left:15px;
         padding-right: 15px;
         border-radius: 10%;
     }
@@ -187,7 +185,7 @@
     }
     .bio-text a:hover{
         font-size: 21px;
-        color: deeplightskyblue;
+        color: deepskyblue;
     }
 
     .block3 .info-text1{
@@ -217,7 +215,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
     }
 
     .flip_card{
@@ -282,15 +279,12 @@
         background-position: center;
         background-size: cover;
         position: relative;
-
-
     }
     .footer-text, a {
         font-size: 40px;
         color: white;
         text-decoration: none;
     }
-
     .hero-image2 .container{
         display: flex;
         flex-wrap: wrap;
@@ -300,6 +294,33 @@
         padding: 150px 0px 0px 0px;
         margin-top: 100px;
     }
+    div.name{
+        color: #32174d;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    div.steps {
+        width: 85%;
+    }
+    .name h3:hover{
+        color: goldenrod;
+        transform: scale(1.2);
+        text-shadow: 2px 2px 10px;
+    }
+
+    .name-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    p.topic  {
+        font-weight: bold ;
+        color: #32174d;
+    }
+
+
+
 /*================================================*/
 /* =========== Styles for Students.html ========= */
     .container-student {
@@ -392,32 +413,12 @@
         font-size: 18px;
     }
     .blockA h2{
-        margin-left: 4.5% ;
+        text-align: center;
+        text-transform: uppercase;
         color: #32174d;
         font-size: 24px;
     }
-    div.name{
-        color: #32174d;
-        width: 185px;
-        margin: 10px;
-    }
 
-    .name h3:hover{
-        color: #50498a;
-        /*color: goldenrod;*/
-        transform: scale(1.2);
-        text-shadow: 2px 2px 10px;
-    }
-
-    .name-container{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: flex-end;
-        text-align: center;
-
-    }
 /* ======= End of styles for Students.html ===== */
 /*==============================================*/
 
@@ -431,7 +432,6 @@
 }
 .projectBlock .gallery img{
     float: left;
-    padding: inherit;
 }
 .project-text{
     width: 60%;
@@ -452,7 +452,7 @@
     justify-content: space-evenly;
     align-content: center;
     color: #32174d;
-    font-size: 48px;
+    font-size: 24px;
     background-color: white;
     padding: 20px 100px 20px 100px;
 }
@@ -460,32 +460,18 @@ div.projectBlock .gallery{
     float: left;
 }
 
-.project-text p {
+.project-text p{
     background-color: lightgray;
     color:  black;
     font-size: 20px;
     border-radius: 25px;
 }
-.project-text h3 {
-    color: black;
+project-text h3{
     font-family: sans-serif;
-    font-size: 30px;
+    margin: 15px;
+    padding-left: 5px;
+    font-size: 24px;
 }
-
-.project-text a {
-  color: blue;
-  font-size: 20px;
-
-}
-
-.project-text a:hover {
-  color: #09bffb;
-}
-
-.project-text a:visited {
-  color: purple;
-}
-
 div.steps {
     width:75%;
     margin-left:auto;
@@ -498,6 +484,7 @@ div.steps p{
 }
 div.steps li{
     padding: 5px 20px 5px 20px;
+    text-align: justify;
 }
 div.steps a{
     color: #32174d;
@@ -535,57 +522,6 @@ div.scroll-up a:hover{
 /* ==============  Events CSS End ============== */
 /*==============================================*/
 
-
-    /* Projects CSS */
-
-    .root_projects_divider {
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 20px;
-    }
-
-    .project_divider {
-      position: relative;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 20px;
-      display: flex;
-    }
-
-    .project_img {
-      border-radius: 35px;
-      width: 300px;
-    }
-
-    .project_description_divider {
-      position: relative;
-      border-radius: 25px;
-      padding: 20px;
-      background-color: lightgray;
-    }
-
-    .project_description_divider h2 {
-      font-family: sans-serif;
-      margin: 15px;
-      padding-left: 5px;
-    }
-
-    .project_description_divider p {
-      font-family: sans-serif;
-      padding-left: 20px;
-    }
-
-    #button_form button {
-      color: white;
-      font-family: sans-serif;
-      border-radius: 35px;
-      width: 200px;
-      height: 35px;
-      background-color: orange;
-      cursor: pointer;
-      border: none;
-      outline: none;
-    }
 
 
 /*****************************************************/
@@ -748,7 +684,6 @@ div.scroll-up a:hover{
         font-size: 24px;
     }
     div.gallery{
-        padding-top: 50px;
         padding-bottom: 50px;
     }
     div.caption{
@@ -845,6 +780,9 @@ div.scroll-up a:hover{
         font-size: 22px;
         padding: 5px;
     }
+    .block1 h2{
+        font-size: 30px;
+    }
     .page-intro {
         margin: 10px 40px 10px 40px;
     }
@@ -916,6 +854,9 @@ div.scroll-up a:hover{
     .hero-image2 {
         height: 40%;
     }
+    div.gallery {
+        width:240px;
+    }
 
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -924,7 +865,7 @@ div.scroll-up a:hover{
         font-size: 30px;
     }
     div.gallery{
-        width: 220px;
+        width: 300px;
     }
     .footer-text, a {
         font-size: 32px;
@@ -980,7 +921,7 @@ div.scroll-up a:hover{
         font-size: 40px;
     }
     div.gallery{
-        width: 300px;
+        width: 400px;
     }
     .top-nav #logo{
         width: 8%;
@@ -1069,7 +1010,6 @@ div.scroll-up a:hover{
     div.gallery{
         /*margin-top: 25px;*/
         width: 280px;
-        padding-top: 50px;
         margin-bottom: 50px;
     }
     div.caption{
