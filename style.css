@@ -406,11 +406,19 @@
     }
 
     .blockA{
-        margin: 40px 0px 65px 0px;
+        margin: 40px 0px 10px 0px;
     }
+
+    .blockA p{
+        margin-left: 5% ;
+        color: #000000;
+        font-size: 24px;
+    }
+
     hr{
         width: 90%;
     }
+
     .blockA h3{
 
         color: #32174d;
@@ -521,9 +529,10 @@ div.scroll-up a:hover{
 
 
     .events h2 {
-        padding: 150px;
+        padding: 10px;
 
     }
+
 /* ==============  Events CSS End ============== */
 /*==============================================*/
 
