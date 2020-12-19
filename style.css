@@ -518,7 +518,9 @@ div.scroll-up a{
 div.scroll-up a:hover{
     color:  goldenrod;
     background-color: #3C2B63;
-
+}
+.blockA p{
+    font-size: 18px;
 }
 /*===============Projects CSS End================*/
 /*===============================================*/
