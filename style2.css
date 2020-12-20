@@ -1,6 +1,17 @@
+
+body, html{
+  height: 100%;
+  margin: 0;
+  font-family: 'Sintony',sans-serif;
+  font-size: 14px;
+}
+
+
 :root {
   --primary-bgcolor: #32174d; 
   --secondary-bg-color: goldenrod;
+  --text-primary: #4b2e83;
+
 }
 
 .container {
@@ -26,7 +37,7 @@ hr{
 }
 
 .hero-text{
-  width: 80%;
+  width: 60vw;
   text-align: center;
   position:absolute;
   top:50%;
@@ -38,13 +49,15 @@ hr{
 }
 #title, h1{
   text-decoration: none;
-  font-family: 'Noto Sans JP', sans-serif;
   border: 3px white solid;
   border-radius: 25px ;
   padding: 30px;
   line-height: 0.85;
+  font-size: 4vw;
 }
-
+.h2 {
+  font-size: 3vw;
+}
 /* ====== STYLES FOR NAVBAR ====== */
 
 .jumbotron {
@@ -97,15 +110,41 @@ div.name{
   padding-right: 40px;
 }
 
-div h3{
+div h3, h4{
   margin:  16px auto;
-  color: #32174d;
-  line-height: 2px;
+  color: var(--text-primary);
+}
+/*
+.name > a > h5 {
+  font-weight: bold;
+} */
+div.steps {
+  font-size: 1.2em;
 }
 
-.name h3:hover{
-  color: var(--secondary-bg-color);
-  transform: scale(1.2);
+div.steps li{
+  padding: 5px 20px 5px 20px;
+  text-align: justify;
+}
+a{
+  color: blue;
+  
+}
+a:hover {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+div.steps > a {
+  font-size: 2em;
+}
+
+div.steps > a:hover {
+  color: var(--text-primary);
+  font-size: 1.2em;
+}
+
+.name h3:hover, h4:hover{
+  transform: scale(1.1);
   text-shadow: 2px 2px 10px;
   text-decoration: none;
 }
@@ -117,18 +156,18 @@ div h3{
   margin: 10px auto;
 }
 
+
 section {
   margin-bottom: 40px;
   margin-left: 10%;
   margin-right: 10%;
   padding: 10px;
 }
-section * {
-  font-size: 20px;
-}
+
 
 section > h2 {
   font-weight: bold;
+  font-size: 0.8em;
 }
 
 .student-card {  
@@ -136,6 +175,7 @@ section > h2 {
   padding: 10px;
   margin-bottom: 20px;
   border: solid rgb(88, 78, 145);
+  font-size: 1.5em;
 }
 
 .student-card img {
@@ -201,14 +241,239 @@ display: flex;
 h2.events-header {
   border: 3px;
   text-align: center;
+  font-size: 2vw;
+  color: var(--primary-bgcolor);
+  font-weight: bolder;
+
 }
 
 #calendar iframe {
   width: 100%;
-  height: 90vh;
+  height: 60vw;
+}
+#calendar {
+  font-size: 1.2em;
 }
 /* ===== END OF EVENTS PAGE =====*/
 
+
+/*===============Projects CSS Start================*/
+/*===============================================*/
+
+div.scroll-up a{
+  color:  #32174d;
+  background-color: #B7A57A;
+  padding: 10px;
+  margin-left: 4px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+div.scroll-up a:hover{
+  color:  goldenrod;
+  background-color: #3C2B63;
+
+}
+.projectBlock *{
+  border-radius: 25px;
+}
+div.projectBlock div {
+  color: black;
+}
+.projectBlock h3, .projectBlock a {
+  color: var(--text-primary);
+}
+.projectBlock h3 {
+  font-weight: bolder;
+}
+
+.project-text {
+  background-color: lightgray;
+  color:  white;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 25px;
+}
+/*===============Projects CSS End================*/
+/*===============================================*/
+
+p.topic  {
+  font-weight: bold ;
+  color: #32174d;
+}
+.pageLinks  ul {
+  list-style: none;
+}
+.pageLinks li a{
+  color: #32174d;
+  font-size: 2em;
+  background-color: white;
+}
+
+
+/*====== ABOUT US Start ======*/
+.block2 {
+  border-radius: 25px;
+  background: #32174d;
+  padding: 50px;
+}
+.block2 a img {
+  width:100%;
+  height:auto;
+  margin-bottom: 10px;
+}
+.block2 .bio-text h2{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.block2 * {
+  border-radius: 25px;
+}
+.bio-text h2{
+  font-size: 2vw;
+  color: white;
+}
+.bio-text h3 {
+  color: white;
+}
+.bio-text {
+  width: 70%;
+  background-color: #50498a;
+  color:  white;
+  padding: 50px;
+  font-size: 1.5em;
+}
+.bio-text a{
+  color: skyblue;
+}
+
+
+
+/*====== ABOUT US End ======*/
+
+/*====== HOME Start ======*/
+.block1 *{
+  border-radius: 25px;
+}
+div.gallery {
+  transition: all .2s ease-in-out;
+}
+div.gallery:hover {
+  transform: scale(1.02);
+}
+.block1 h2 {
+  font-size: 2.5vw;
+  color: var(--primary-bgcolor);
+  font-weight: bolder;
+}
+div.caption{
+  font-size: 1.5em;
+  padding: 10px;
+  text-align: center;
+}
+
+.block3 {
+  background: #32174d;
+  padding: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.block3 .info-text1{
+  font-size: 3em;
+  text-align: center;
+  line-height: 1.3;
+
+  color: white;
+}
+.block3 .info-text2{
+  font-size: 2em;
+  align-content: center;
+  line-height: 1.3;
+  text-align: center;
+  color: white;
+}
+.block3 a {
+  color: skyblue;
+}
+
+.block4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flip_card{
+  background-color: transparent;
+  width: 300px;
+  height: 525px;
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+.flip_card_front p, .flip_card_back p {
+  font-size: 1.2em;
+}
+.flip_card_back p {
+  font-size: 15px;
+  padding: 22px 12px 22px 12px;
+}
+/************ Figure out how to keep front and flip same size and remove weird shadow *************/
+.flip_card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 35px;
+  transition:transform 1.2s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+.flip_card:hover .flip_card_inner {
+  transform: rotateY(180deg);
+}
+.flip_card_front, .flip_card_back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+.flip_card_front{
+  background-color: #50498a;
+  border-radius: 35px;
+  color: black;
+  padding: 30px;
+  
+}
+.flip_card_front p{
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin:10px;
+}
+.flip_card_front img{
+  width: 100%;
+  height: auto;
+}
+
+.flip_card_back{
+  background-color: #32174d;
+  border-radius: 35px;
+  color: white;
+  transform: rotateY(180deg);
+
+
+}
+.flip_card_back p {
+  font-size: 1.5em;
+  padding: 22px 12px 22px 12px;
+}
+
+
+
+/*====== HOME End ======*/
 
 @media only screen and (max-width: 992px)  {
   .navbar-collapse {

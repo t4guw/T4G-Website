@@ -137,6 +137,7 @@
         background: #32174d;
         margin: 100px 50px 100px 50px;
         padding: 50px 0px 50px 0px;
+
     }
 
     .event-date {
@@ -457,6 +458,7 @@
 .pageLinks li{
     display: inline;
 }
+
 .pageLinks li a{
     display: inline;
     flex-display: row;
