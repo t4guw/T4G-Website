@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
     <meta name="Tech 4 Good Research Group" content="T4G students, projects and events">
 
     <script src="https://use.fontawesome.com/cb342c03cb.js"></script>
@@ -31,6 +33,10 @@
 
 <body>
     <header class="jumbotron">
+        <div class="hero-text">
+            <h1 id="h1 title">T4G STUDENTS</h1>
+            <h2 class="h2">Research Group</h2>
+        </div>
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="index.html">
                 <img src="img/T4G-Logo.png" alt="T4G logo">
@@ -41,29 +47,26 @@
                 <span class="navbar-toggler-icon"></span>
 
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent" style="text-align: center">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="capstone.html">Capstone</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="students.html">Students</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="students.html">Students</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a> </li>
                 </ul>
 
             </div>
         </nav>
-        <div class="hero-text">
-            <h1 id="h1 title">T4G Students </h1>
-            <h2 class="h2">Research Group</h2>
-        </div>
+        
     </header>
 
     <!-- Introduction for Students page-->
     <section id="student-list to-hover">
-        <a class="" data-toggle="collapse" href="#current-student" role="button" aria-expanded="false"
+        <a data-toggle="collapse" href="#current-student" role="button" aria-expanded="false"
             aria-controls="collapseExample">
-            <h2><b>&#9654; See current Students</b></h2>
+            <h2><b><i class="fas fa-user-graduate mr-2"></i>See Current Students</b></h2>
         </a>
         <div class="collapse" id=current-student>
 
@@ -129,7 +132,7 @@
         <hr>
         <a class="" data-toggle="collapse" href="#current-capstone" role="button" aria-expanded="false"
             aria-controls="collapseExample">
-            <h2><b>&#9654; See capstone Students</b></h2>
+            <h2><b><i class="fas fa-user-graduate mr-2"></i>See Capstone Students</b></h2>
         </a>
 
         <div id=current-capstone class="collapse">
@@ -155,7 +158,7 @@
         <hr>
         <a class="" data-toggle="collapse" href="#alumni" role="button" aria-expanded="false"
             aria-controls="collapseExample">
-            <h2><b>&#9654; See Alumni 2019</b></h2>
+            <h2><b><i class="fas fa-user-graduate mr-2"></i>See Alumni</b></h2>
         </a>
         <div id="alumni" class="collapse">
             <div class="name-container">
@@ -202,17 +205,20 @@
     <section id="about-students">
         <div class="student-card">
             <div class="row p-4">
-                <div class="col-sm-12 col-md-4" >
+                <div class="col-sm-12 col-md-4 col-lg-4 my-auto">
                     <img src="./img/KezMay.png" alt="student name" width="100%" height="auto">
                 </div>
-                <div class="col-sm-12 col-md-8">
+                <div class="col-sm-12 col-md-8 ">
                     <b>Keziah May</b>
-                    <p class="">Before becoming a Software Engineer, Keziah spent many years gaining skills and life experience. 
-                        She has worked in industries as diverse as Cosmetology and Meat Processing. 
-                        Through her many adventures in education, Keziah discovered a passion for teaching. 
-                        She dedicated her time to learning about communication and relationships and started a business teaching local workshops. 
-                        She is excited to combine her love of education, teaching, and computer science by 
-                        providing online courses to bridge the gap between Computer Science education and industry expectations. 
+                    <p class="">Before becoming a Software Engineer, Keziah spent many years gaining skills and life
+                        experience.
+                        She has worked in industries as diverse as Cosmetology and Meat Processing.
+                        Through her many adventures in education, Keziah discovered a passion for teaching.
+                        She dedicated her time to learning about communication and relationships and started a business
+                        teaching local workshops.
+                        She is excited to combine her love of education, teaching, and computer science by
+                        providing online courses to bridge the gap between Computer Science education and industry
+                        expectations.
                     </p>
 
                 </div>
@@ -220,12 +226,13 @@
         </div>
         <div class="student-card">
             <div class="row p-4">
-                <div class="col-sm-12 col-md-4" >
+                <div class="col-sm-12 col-md-4 my-auto">
                     <img src="./img/ericaf_photo.jpg" alt="student name" width="100%" height="auto">
                 </div>
-                <div class="col-sm-12 offset-sm-2 col-md-8 offset-md-0">
+                <div class="col-sm-12 offset-sm-2 col-md-8 offset-md-0 my-auto">
                     <b>Erica Ferguson</b>
-                    <p class="">As a T4G participant, I’m interested in topics involving student learning, having done research on the benefits streaming services for live CS education. 
+                    <p class="">As a T4G participant, I’m interested in topics involving student learning, having done
+                        research on the benefits streaming services for live CS education.
                         The hope is to consider alternative ways of teaching and engaging with CS problems.</p>
 
                 </div>
