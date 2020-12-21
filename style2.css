@@ -276,13 +276,13 @@ div.footer-text {
 h2.events-header {
     border: 3px;
     text-align: center;
-    font-size: 2vw;
+    font-size: 2em;
     color: var(--primary-bgcolor);
     font-weight: bolder;
 }
 
 .event-text h2 {
-    font-size: 2vw;
+    font-size: 1.5em;
 }
 
 #calendar iframe {
