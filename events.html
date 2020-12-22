@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- 
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <meta name="Tech 4 Good Research Group" content="T4G students, projects and events">
     <script src="https://use.fontawesome.com/cb342c03cb.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+    <meta name="Tech 4 Good Research Group" content="T4G students, projects and events">
+
+    <script src="https://use.fontawesome.com/cb342c03cb.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Four Good Research Group</title>
     <meta name="author" content="SitePoint">
 </head>
+
 <body>
 
-
+    <!--
     <header class="hero-image">
         <div class="top-nav">
             <ul>
@@ -21,7 +39,7 @@
                     <img src="img/T4G-Logo.png" alt="T4G logo" width="65" height="65">
                 </a></li>
 
-                <!--  Links in navigation bar -->
+              
                 <li><a href="about.html">About Us</a> </li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="students.html">Students</a></li>
@@ -32,97 +50,134 @@
         </div>
         <div class="hero-text">
             <h1 id="title">T4G Events </h1>
-            <!--            <h2>Department of Computer Science & Software Engineering</h2>-->
+           
             <h2>Research Group</h2>
         </div>
     </header>
+-->
+    <header class="hero-image">
 
-    <h2 class="events-header">Upcoming Events for Winter 2021</h2>
+        <div class="hero-text container">
+            <h1 id="title">EVENTS</h1>
+            <h2 class="h2">Research Group</h2>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/T4G-Logo.png" alt="T4G logo">
+            </a>
+            <!--toggler navbar for small size screens-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
 
-    <div class="blockA" id="calendar">
-      <!-- Start of posts -->
-      <div class="block-event">
+            </button>
+            <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent" style="text-align: center">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="capstone.html">Capstone</a></li>
+                    <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a> </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+    </header>
+
+    <h2 class="events-header container mt-4">Upcoming Events for Winter 2021</h2>
+
+    <div id="upcoming-events" class="container">
+        <!-- Start of posts -->
+        <div class="block-event">
             <div class="event-gallery">
-                <div class="event-date">
-                  <h2>Dec 1</h2>
+                <div class="row event-date">
+                    <h2 class="mx-auto">Mar. 19 2021</h2>
                 </div>
-                <div class="event-text">
-                    <h2>Event 1</h2>
-                    Tech for Good had its inaugural year Fall of 2019.  What started off with students doing Leetcode problems
-                    as independent study evolved into an interest in how students learn and succeed in computer science. Past projects
-                    have included machine learning, AI, games with a purpose.
+                <div class="row event-text">
+                    <h2>Winter 2021 Colloquium</h2>
+                    After completion of the cooperative education project the student will give a poster and an oral presentation in front of peers, CSS faculty, staff, and the public at the Colloquium. The Colloquium is typically on the Friday of the last week of instruction
+                    or of finals week.<br>
+                    <b>Time: TBA</b>
                 </div>
             </div>
 
             <div class="event-gallery">
-                <div class="event-date">
-                  <h2>Dec 2</h2>
+                <div class="row event-date">
+                    <h2 class="mx-auto">June 1 2021</h2>
                 </div>
-                <div class="event-text">
-                    <h2>Event 2</h2>
-                    Tech for Good had its inaugural year Fall of 2019.  What started off with students doing Leetcode problems
-                    as independent study evolved into an interest in how students learn and succeed in computer science. Past projects
-                    have included machine learning, AI, games with a purpose.'
-                    Tech for Good had its inaugural year Fall of 2019.  What started off with students doing Leetcode problems
-                    as independent study evolved into an interest in how students learn and succeed in computer science. Past projects
-                    have included machine learning, AI, games with a purpose.'
-
+                <div class="row event-text">
+                    <h2>Spring 2021 Colloquium</h2>
+                    After completion of the cooperative education project the student will give a poster and an oral presentation in front of peers, CSS faculty, staff, and the public at the Colloquium. The Colloquium is typically on the Friday of the last week of instruction
+                    or of finals week.<br>
+                    <b>Time: TBA</b>
                 </div>
             </div>
 
+            <!--
             <div class="event-gallery">
-                <div class="event-date">
-                  <h2>Dec 3</h2>
+                <div class="row event-date">
+                  <h2 class="my-auto mx-auto">Dec 3</h2>
                 </div>
-                <div class="event-text">
+                <div class="row event-text">
                     <h2>Event 3</h2>
                     Tech for Good had its inaugural year Fall of 2019.  What started off with students doing Leetcode problems
                     as independent study evolved into an interest in how students learn and succeed in computer science. Past projects
                     have included machine learning, AI, games with a purpose.
                 </div>
             </div>
+        -->
+
+
+
         </div>
+
+
+
         <!-- End of posts -->
 
-            <h2>More event posts are coming...</h2>
 
-            <!--//Event posts-->
 
-            <hr>
 
-            <!--Calendar-->
-            <h2>Upcoming events</h2>
 
-            <p>Click
-                <img src="./img/add_to_calendar.png" width="120" height="auto">
-                at the bottom right corner to add events to your calendar. Other questions,
-                please contact us via email.
-            </p>
-            <div class="container">
-                <iframe
-                    src="#"
-                    style="border: 0" frameborder="0" scrolling="no" width="1000" height="800">
-                </iframe>
-            </div>
-            <!--//Calendar-->
 
+    </div>
+
+    <hr>
+
+
+
+    <div id="calendar" class="container">
+        <h2 class="events-header">Calendar</h2>
+
+        <!--Calendar-->
+
+        <p class="text-center mb-5">
+            <img src="./img/addCalendar_icon.png" width="120" height="auto"> at the bottom right corner to add events to your calendar. Other questions, please contact us via email.
+        </p>
+        <div class="center">
+            <!--PASTE YOUR YOUR GOOGLE CALENDAR IFRAME BRLOW-->
+            <iframe src="https://calendar.google.com/calendar/embed?src=c_dmg8j3o4ono9s0a7nagmdt3d4o%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
         </div>
+        <!--//Calendar-->
+    </div>
+
+
+    <div class="scroll-up row container">
+        <a href="#top"><i class="fa fa-hand-o-up center"></i></a>
     </div>
 
 
 
-
-
-
-    <footer class="hero-image2">
-        <div class="container">
-            <div class="footer-text">
-               <p>Contact: pisan@uw.edu for more information</p>
-            </div>
+    <footer id="sticky-footer" class="py-4 hero-image2 text-white-50">
+        <div class="container text-center col-sm-12 my-auto">
+            <p class="footer-text">Contact: pisan@uw.edu for more information</p>
+            <small style="font-size: 1.5em;">Copyright &copy; T4G</small>
         </div>
     </footer>
 
-
 </body>
+
 </html>

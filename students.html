@@ -4,22 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <!--<link rel="stylesheet" type="text/css" href="style.css">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
     <meta name="Tech 4 Good Research Group" content="T4G students, projects and events">
 
     <script src="https://use.fontawesome.com/cb342c03cb.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
@@ -30,147 +25,200 @@
 </head>
 
 <body>
-    <header class="jumbotron">
+    <header class="hero-image">
+
+        <div class="hero-text container">
+            <h1 id="title">STUDENTS</h1>
+            <h2 class="h2">Research Group</h2>
+        </div>
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="index.html">
                 <img src="img/T4G-Logo.png" alt="T4G logo">
             </a>
             <!--toggler navbar for small size screens-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+    
+                </button>
+            <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent" style="text-align: center">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="capstone.html">Capstone</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="students.html">Students</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="students.html">Students</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a> </li>
                 </ul>
 
             </div>
         </nav>
-        <div class="hero-text">
-            <h1 id="h1 title">T4G Students </h1>
-            <h2 class="h2">Research Group</h2>
-        </div>
+
+
     </header>
 
     <!-- Introduction for Students page-->
-    <section id="student-list to-hover">
-        <a class="" data-toggle="collapse" href="#current-student" role="button" aria-expanded="false"
-            aria-controls="collapseExample">
-            <h2><b>&#9654; See current Students</b></h2>
+    <section id="student-list" class="container mt-4">
+        <a data-toggle="collapse" href="#current-student" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <h2><b><i class="fas fa-user-graduate mr-2"></i>See Current Students</b></h2>
         </a>
         <div class="collapse" id=current-student>
 
             <div class="name-container card-body">
-                <div class="name"> <a href="https://www.linkedin.com/in/nhyoung/">
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/nhyoung/">
                         <h3>Nicholas Young</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/eabshire/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/eabshire/">
                         <h3>Ed Abshire</h3>
-                    </a></div>
-                <div class="name"> <a href="">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="">
                         <h3>Gabriel Acuna</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/kayla-sprague/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/kayla-sprague/">
                         <h3>Kayla Sprague</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/rdk/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/rdk/">
                         <h3>Rachael Kim</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/bhristov96/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/bhristov96/">
                         <h3>Boyan Hristov</h3>
-                    </a></div>
+                    </a>
+                </div>
 
-                <div class="name"> <a href="https://www.linkedin.com/in/youngjonathanp/">
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/youngjonathanp/">
                         <h3>Jonathan Young</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/keziahmay/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/keziahmay/">
                         <h3>Keziah May</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/samuel-munford-465ab6172/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/samuel-munford-465ab6172/">
                         <h3>Samuel A. Munford</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/victorsuciu/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/victorsuciu/">
                         <h3>Victor Suciu</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/victorsuciu/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/mlcdang">
                         <h3>Mitchell Dang</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/iambillzhao/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/iambillzhao/">
                         <h3>Bill Zhao</h3>
-                    </a></div>
+                    </a>
+                </div>
 
-                <div class="name"> <a href="https://www.linkedin.com/in/erica-m-ferguson/">
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/erica-m-ferguson/">
                         <h3>Erica Ferguson</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/sam-f-wolf/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/sam-f-wolf/">
                         <h3>Sam Wolf</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/rakshabohra/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/rakshabohra/">
                         <h3>Raksha Bohra</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/cbrosius/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/cbrosius/">
                         <h3>Catherine Brosius</h3>
-                    </a></div>
-                <div class="name"> <a href="">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="">
                         <h3>Karina Rodriguez</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/isabel-giang/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/isabel-giang/">
                         <h3>Isabel Giang</h3>
-                    </a></div>
+                    </a>
+                </div>
             </div>
         </div>
         <hr>
-        <a class="" data-toggle="collapse" href="#current-capstone" role="button" aria-expanded="false"
-            aria-controls="collapseExample">
-            <h2><b>&#9654; See capstone Students</b></h2>
+        <a class="" data-toggle="collapse" href="#current-capstone" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <h2><b><i class="fas fa-user-graduate mr-2"></i>See Capstone Students</b></h2>
         </a>
 
         <div id=current-capstone class="collapse">
             <div class="name-container">
 
-                <div class="name"><a href="https://www.linkedin.com/in/angela-ferro-capera/">
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/angela-ferro-capera/">
                         <h3>Angela Ferro Capera</h3>
-                    </a></div>
-                <div class="name"><a href="https://www.linkedin.com/in/bhristov96/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/bhristov96/">
                         <h3>Boyan Hristov</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/garima-maheshwari-802511179/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/garima-maheshwari-802511179/">
                         <h3>Garima Maheshwari</h3>
-                    </a></div>
-                <div class="name"><a href="">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="">
                         <h3>Joy Yehuda Lodra</h3>
-                    </a></div>
-                <div class="name"><a href="https://www.linkedin.com/in/kemba-konteh/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/kemba-konteh/">
                         <h3>Kemba Konteh</h3>
-                    </a></div>
+                    </a>
+                </div>
             </div>
         </div>
         <hr>
-        <a class="" data-toggle="collapse" href="#alumni" role="button" aria-expanded="false"
-            aria-controls="collapseExample">
-            <h2><b>&#9654; See Alumni 2019</b></h2>
+        <a class="" data-toggle="collapse" href="#alumni" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <h2><b><i class="fas fa-user-graduate mr-2"></i>See Alumni</b></h2>
         </a>
         <div id="alumni" class="collapse">
             <div class="name-container">
-                <div class="name"> <a href="https://www.linkedin.com/in/mgomezuwb/">
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/mgomezuwb/">
                         <h3>Marcela Gomez</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/auserich/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/auserich/">
                         <h3>Austin Rich</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/estefanofelipa/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/estefanofelipa/">
                         <h3>Estefano Felipa</h3>
-                    </a></div>
-                <div class="name"> <a href="https://www.linkedin.com/in/etcadinfinitum/">
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="https://www.linkedin.com/in/etcadinfinitum/">
                         <h3> Lizzy Presland</h3>
-                    </a></div>
+                    </a>
+                </div>
                 <!--            <div> <h3> </h3> <br> <a href=""><p></p></a></div>-->
                 <!--            <div> <h3> </h3> <br> <a href=""><p></p></a></div>-->
                 <!--            <div> <h3> </h3> <br> <a href=""><p></p></a></div>-->
@@ -180,63 +228,48 @@
 
     </section>
 
-    <!--
-    <section>
-        <h2>Page intro</h2>
-        <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac metus elit. Suspendisse
-            pellentesque tellus
-            imperdiet, faucibus tellus at, mattis nisl.
-            Aliquam vestibulum augue vitae libero rhoncus, ac suscipit sem venenatis. Curabitur eu ligula auctor,
-            pellentesque
-            metus nec, venenatis mi. Proin congue nibh sed tellus luctus,
-            sed mattis mi dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac metus elit.
-            Suspendisse
-            pellentesque tellus imperdiet, faucibus tellus at, mattis nisl.
-            Aliquam vestibulum augue vitae libero rhoncus, ac suscipit sem venenatis. Curabitur eu ligula auctor,
-            pellentesque
-            metus nec, venenatis mi. Proin congue nibh sed tellus luctus,
-            sed mattis mi dictum.</p>
-    </section>
--->
-
-    <section id="about-students">
-        <div class="student-card">
+    <div id="about-students" class="container">
+        <div class="student-card container">
             <div class="row p-4">
-                <img class="col-sm-12 col-md-4" src="./img/KezMay.png" alt="student name" width="90%">
-                <div class="col-sm-12 offset-sm-2 col-md-8 offset-md-0">
+                <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+                    <img src="./img/KezMay.png" alt="student name" width="100%" height="auto">
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8">
                     <b>Keziah May</b>
-                    <p class="">Before becoming a Software Engineer, Keziah spent many years gaining skills and life experience. 
-                        She has worked in industries as diverse as Cosmetology and Meat Processing. 
-                        Through her many adventures in education, Keziah discovered a passion for teaching. 
-                        She dedicated her time to learning about communication and relationships and started a business teaching local workshops. 
-                        She is excited to combine her love of education, teaching, and computer science by 
-                        providing online courses to bridge the gap between Computer Science education and industry expectations. 
+                    <p>Before becoming a Software Engineer, Keziah spent many years gaining skills and life experience. She has worked in industries as diverse as Cosmetology and Meat Processing. Through her many adventures in education, Keziah discovered
+                        a passion for teaching. She dedicated her time to learning about communication and relationships and started a business teaching local workshops. She is excited to combine her love of education, teaching, and computer science by
+                        providing online courses to bridge the gap between Computer Science education and industry expectations.
                     </p>
 
                 </div>
             </div>
         </div>
-        <div class="student-card">
+        <div class="student-card container">
             <div class="row p-4">
-                <img class="col-sm-12 col-md-4" src="./img/ericaf_photo.jpg" alt="student name" width="90%">
-                <div class="col-sm-12 offset-sm-2 col-md-8 offset-md-0">
+                <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+                    <img src="./img/ericaf_photo.jpg" alt="student name" width="100%" height="auto">
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8">
                     <b>Erica Ferguson</b>
-                    <p class="">As a T4G participant, I’m interested in topics involving student learning, having done research on the benefits streaming services for live CS education. 
-                        The hope is to consider alternative ways of teaching and engaging with CS problems.</p>
+                    <p>As a T4G participant, I’m interested in topics involving student learning, having done research on the benefits streaming services for live CS education. The hope is to consider alternative ways of teaching and engaging with CS problems.</p>
 
                 </div>
             </div>
         </div>
 
-    </section>
+    </div>
 
 
 </body>
 
-<footer id="sticky-footer" class="py-4 hero-image2 text-white-50">
+<div class="scroll-up row container">
+    <a href="#top"><i class="fa fa-hand-o-up center"></i></a>
+</div>
+
+<footer id="sticky-footer" class="my-4 py-4 hero-image2 text-white-50">
     <div class="container text-center col-sm-12 my-auto">
         <p class="footer-text h2">Contact: pisan@uw.edu for more information</p>
-        <small>Copyright &copy; T4G</small>
+        <small style="font-size: 1.5vw;">Copyright &copy; T4G</small>
     </div>
 </footer>
 

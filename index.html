@@ -1,100 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
     <meta name="Tech 4 Good Research Group" content="T4G students, projects and events">
 
     <script src="https://use.fontawesome.com/cb342c03cb.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Four Good Research Group</title>
+    <title>T4G Research Group</title>
 </head>
 
 <body>
     <header class="hero-image">
-        <div class="top-nav">
-            <ul>
-                <li id="logo"><a target="blank" href="index.html">
-                    <img src="img/T4G-Logo.png" alt="T4G logo" width="65" height="65">
-                </a></li>
 
-                <!--  Links in navigation bar -->
-                <li><a href="about.html">About Us</a> </li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="students.html">Students</a></li>
-                <li><a href="capstone.html">Capstone</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
+        <div class="hero-text container">
+            <h1 id="title">TECH FOR GOOD</h1>
+            <h2 class="h2">Research Group</h2>
         </div>
-        <div class="hero-text">
-            <h1 id="title">Tech For Good </h1>
-<!--            <h2>Department of Computer Science & Software Engineering</h2>-->
-            <h2>Research Group</h2>
-        </div>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/T4G-Logo.png" alt="T4G logo">
+            </a>
+            <!--toggler navbar for small size screens-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+    
+                </button>
+            <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent" style="text-align: center">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="capstone.html">Capstone</a></li>
+                    <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a> </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
     </header>
 
-<!-- Start   Block 1 holds title and blocks for each project with an image and caption  Start -->
-    <div class="block1">
-        <h2>Research and Capstone Projects</h2>
-        <div class="container">
 
+    <!-- Start   Block 1 holds title and blocks for each project with an image and caption  Start -->
+
+    <div class="container block1 mx-auto">
+        <h2 class="col-sm-12 col-md-12 col-lg-12 text-center my-4">Research and Capstone Projects</h2>
+        <div class="row">
             <!--Concentration 1: Leetcode -->
-            <div class="gallery">
+            <div class="col-sm-12 col-md-4 col-lg-4 gallery">
                 <a href="projects.html">
-                    <img src="img/controller.jpg" alt="game controller on a table" width="600" height="400">
+                    <img src="img/controller.jpg" alt="game controller on a table" width="100%" height="auto">
                 </a>
                 <div class="caption">Games With a Purpose</div>
             </div>
 
 
             <!--Concentration 2: Leetcode -->
-            <div class="gallery">
+            <div class="col-sm-12 col-md-4 col-lg-4 gallery">
                 <a href="projects.html">
-                    <img src="img/source.jpg" alt="code on a screen" width="600" height="400">
+                    <img src="img/source.jpg" alt="code on a screen" width="100%" height="auto">
                 </a>
                 <div class="caption">Artificial Intelligence</div>
             </div>
 
             <!--Concentration  3: CS Education  -->
-            <div class="gallery">
-                <a  href="projects.html">
-                    <img src="img/students.jpg" alt="three students around a computer" width="600" height="400">
+            <div class="col-sm-12 col-md-4 col-lg-4 gallery">
+                <a href="projects.html">
+                    <img src="img/students.jpg" alt="three students around a computer" width="100%" height="auto">
                 </a>
                 <div class="caption">CS Education</div>
             </div>
         </div>
+
     </div>
+
     <!-- End of   Block 1   End  -->
 
-<!--  Start   Block 3: How to sign up for participate T4G   Start -->
+
+    <!--  Start   Block 3: How to sign up for participate T4G   Start -->
     <div class="block3">
-        <div class ="container">
-            <div class="info-text1">
-                <b>Capstone <br></b>
-                <b>Independent Study<br></b>
-                <b>Undergraduate Research <br></b>
+        <div class="container">
+            <div class="row">
+                <div class="my-auto col-sm-12 col-md-6 col-lg-6 info-text1">
+                    <b>Capstone <br></b>
+                    <b>Independent Study<br></b>
+                    <b>Undergraduate Research <br></b>
+                </div>
+                <div class="my-auto col-sm-12 col-md-6 col-lg-6 info-text2">
+                    <b>To apply, send:<br></b> -Copy of Transcript <br> -Brief Statement of Interest <br> -Preference for credit or volunteer <br> to Yusuf Pisan at <a href="mailto:pisan@uw.edu">pisan@uw.edu</a>
+                </div>
             </div>
-            <div class="info-text2">
-                <b>To apply, send:<br></b>
-                -Copy of Transcript <br>
-                -Brief Statement of Interest <br>
-                -Preference for credit or volunteer <br>
-                to Yusuf Pisan at pisan@uw.edu
-            </div>
+
         </div>
+
     </div>
     <!--  End of Block 3   End -->
 
-<!--Start   Block 4 Student Researcher in T4G  Start -->
-    <div class="block4">
+    <!--Start   Block 4 Student Researcher in T4G  Start -->
+    <div class="block4 container">
         <div class="flip_card">
             <div class="flip_card_inner">
                 <div class="flip_card_front">
                     <img src="img/RachelKim.jpg" alt="Girl standing in meadow">
-                    <div><p>Rachel Kim</p></div>
+                    <div>
+                        <p>Rachel Kim</p>
+                    </div>
                 </div>
                 <div class="flip_card_back">
                     <p> Building Problem Solver (BPS)</p>
@@ -106,12 +131,13 @@
             <div class="flip_card_inner">
                 <div class="flip_card_front">
                     <img src="img/SamWolf.jpg" alt="Girl standing in meadow">
-                    <div><p>Sam Wolf</p></div>
+                    <div>
+                        <p>Sam Wolf</p>
+                    </div>
                 </div>
                 <div class="flip_card_back">
-                    <p>I work primarily on iOS and Android apps, with a strong interest in Machine Learning and its
-                        applications. The work I have done for T4G is the start of an automated technical paper grader,
-                        along with some additions to this Website. </p>
+                    <p>I work primarily on iOS and Android apps, with a strong interest in Machine Learning and its applications. The work I have done for T4G is the start of an automated technical paper grader, along with some additions to this Website.
+                    </p>
                 </div>
             </div>
         </div>
@@ -120,26 +146,28 @@
             <div class="flip_card_inner">
                 <div class="flip_card_front">
                     <img src="img/MarcelaGomez.jpg" alt="Girl standing in meadow">
-                    <div><p>Marcela Gomez</p></div>
+                    <div>
+                        <p>Marcela Gomez</p>
+                    </div>
                 </div>
                 <div class="flip_card_back">
-                    <p>Problem solving leetcode problems brought me to T4G. I stayed to participate in games with a
-                        purpose and creating a new team website. </p>
+                    <p>Problem solving leetcode problems brought me to T4G. I stayed to participate in games with a purpose and creating a new team website. </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="block4">
+    <div class="block4 container">
         <div class="flip_card">
             <div class="flip_card_inner">
                 <div class="flip_card_front">
                     <img src="img/BillZhao.png" alt="Girl standing in meadow">
-                    <div><p>Bill Zhao</p></div>
+                    <div>
+                        <p>Bill Zhao</p>
+                    </div>
                 </div>
                 <div class="flip_card_back">
-                    <p> Bill worked on the hint generator project and contributed to the Stepik course as his
-                        Capstone project.</p>
+                    <p> Bill worked on the hint generator project and contributed to the Stepik course as his Capstone project.</p>
                 </div>
             </div>
         </div>
@@ -148,13 +176,13 @@
             <div class="flip_card_inner">
                 <div class="flip_card_front">
                     <img src="img/KeziahMay.jpg" alt="Girl standing in meadow">
-                    <div><p>Keziah May </p></div>
+                    <div>
+                        <p>Keziah May </p>
+                    </div>
                 </div>
                 <div class="flip_card_back">
-                    <p>As a member of T4G, I am working with my team to create an online class focused on
-                        problem solving. The goal of this course is to bridge the gap between Computer
-                        Science education and the skills required to land a job.
-                        https://stepik.org/course/72339/promo </p>
+                    <p>As a member of T4G, I am working with my team to create an online class focused on problem solving. The goal of this course is to bridge the gap between Computer Science education and the skills required to land a job. https://stepik.org/course/72339/promo
+                    </p>
                 </div>
             </div>
         </div>
@@ -163,7 +191,9 @@
             <div class="flip_card_inner">
                 <div class="flip_card_front">
                     <img src="img/NicholasYoung.png " alt="Girl standing in meadow">
-                    <div><p>Nicholas Young </p></div>
+                    <div>
+                        <p>Nicholas Young </p>
+                    </div>
                 </div>
                 <div class="flip_card_back">
                     <p>100 Unity Mechanics</p>
@@ -173,22 +203,28 @@
     </div>
     <!--End of Block 4  End -->
 
-<!--    <div class="block5">-->
-<!--        <div class="article">-->
 
-<!--        </div>-->
-<!--    </div>-->
+    <!--    <div class="block5">-->
+    <!--        <div class="article">-->
+
+    <!--        </div>-->
+    <!--    </div>-->
 
 
 
 
-    <footer class="hero-image2">
-        <div class="container">
-            <div class="footer-text">
-                <p>Contact: pisan@uw.edu for more information</p>
-            </div>
+    <div class="scroll-up row container">
+        <a href="#top"><i class="fa fa-hand-o-up center"></i></a>
+    </div>
+
+
+    <footer id="sticky-footer" class="py-4 hero-image2 text-white-50 mt-4">
+        <div class="container text-center col-sm-12 my-auto">
+            <p class="footer-text h2">Contact: pisan@uw.edu for more information</p>
+            <small style="font-size: 1.5vw;">Copyright &copy; T4G</small>
         </div>
     </footer>
 
 </body>
+
 </html>

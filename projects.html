@@ -1,173 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://use.fontawesome.com/cb342c03cb.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
     <meta name="Tech 4 Good Research Group" content="T4G students, projects and events">
+
+    <script src="https://use.fontawesome.com/cb342c03cb.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T4G Projects</title>
-</head>
-<body>
-<header class="hero-image">
-    <div class="top-nav">
-        <ul>
-            <li id="logo"><a target="blank" href="index.html">
-                <img src="img/T4G-Logo.png" alt="T4G logo" width="65" height="65">
-            </a></li>
 
-            <!--  Links in navigation bar -->
-            <li><a href="about.html">About Us</a> </li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="students.html">Students</a></li>
-            <li><a href="capstone.html">Capstone</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="index.html">Home</a></li>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T4G Students</title>
+
+</head>
+
+<body>
+    <header class="hero-image">
+
+        <div class="hero-text container">
+            <h1 id="title">PROJECTS</h1>
+            <h2 class="h2">Research Group</h2>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/T4G-Logo.png" alt="T4G logo">
+            </a>
+            <!--toggler navbar for small size screens-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent" style="text-align: center">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="capstone.html">Capstone</a></li>
+                    <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a> </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+    </header>
+
+
+    <div id="top" class="container pageLinks mt-4">
+        <ul>
+            <!--                <li><a href="#capstone">Capstone Resources</a></li>-->
+            <li><a href="#Projects">Research Projects</a></li>
         </ul>
     </div>
-    <div class="hero-text">
-        <h1 id="title">T4G Projects</h1>
-        <!--            <h2>Department of Computer Science & Software Engineering</h2>-->
-        <h2>Research Group</h2>
-    </div>
-</header>
 
-
-<div class="pageLinks" id="top">
-    <ul>
-<!--                <li><a href="#capstone">Capstone Resources</a></li>-->
-        <li><a href="#Projects">Research Projects</a></li>
-    </ul>
-</div>
-
-   <div class="projectBlock">
-      <div class="container">
-        <div class="gallery">
-          <a target="blank">
-            <img src="img/bag.jpg" alt="students working around a computer" width="360" height="210">
-          </a>
-        </div>
-        <div class="project-text">
-            <h3>Improving Programming Skills through Explanations</h3>
-            <p>Most computer science students have difficulty with technical interviews even though they are familiar with the necessary data structures. As part of this project, students work on problems taken from a popular coding challenge site, <a href="https://leetcode.com/ ">Leetcode</a>, and create detailed explanations for each of the questions. The solutions are intended not just to solve the problem, but explore different ways of approaching the problem as well as understand how to tackle similar problems. These lesson plans are being gathered at the T4G <a href="https://stepik.org/course/72339">Stepik Course</a> to be used as a resource for future courses.</p>
-            </br>
-            <p>For this project, the preferred programming language is C++, but the explanations are language independent</p>
-            </br>
-            <p>Current members: Bill Zhao, Boyan Hristov,  Jonathan Young, Kez Danielle May, Samuel A. Munford</p>
-            </br>
-            <p>Past Members: Isabel Giang,  Mitchell Dang, Taylor Eyler</p>
-            </br>
-            <p>Project Category: CS Education</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="projectBlock">
-       <div class="container">
-         <div class="project-text">
-             <h3>Generating Hints for Programming Problems Without a Solution</h3>
-             <p>Providing good quality feedback on programming questions is a challenging task. Intelligent Tutoring Systems that address this problem are built by hand which limits their scope and make them difficult to maintain. In this project, we explore how hints can be generated automatically using only the problem descriptions. We are experimenting with using a subset of problems taken from <a href="https://leetcode.com/ ">Leetcode</a> as input and using various machine learning algorithms to classify problems.</p>
-             </br>
-             <p>Current members: Victor Suciu, Isabel Giang, Bill Zhao, Jessica Runandy, Mitchell Dang</p>
-             </br>
-             <p>Project Category: Artificial Intelligence</p>
-         </div>
-         <div class="gallery">
-           <a target="blank">
-             <img src="img/learn.jpg" alt="students working around a computer" width="360" height="210">
-           </a>
-         </div>
-       </div>
-     </div>
-
-     <div class="projectBlock">
-        <div class="container">
-          <div class="gallery">
-            <a target="blank">
-              <img src="img/students.jpg" alt="students working around a computer" width="360" height="210">
+    <div class="container projectBlock">
+        <div class="row">
+            <a class="col-sm-12 col-md-4 col-lg-4" target="blank">
+                <img src="img/bag.jpg" alt="students working around a computer" width="100%" height="auto">
             </a>
-          </div>
-          <div class="project-text">
-              <h3>The Evolution of Computer Science Education</h3>
-              <p>Online streaming platforms such as Twitch.tv, while originally created as a form of entertainment for viewers to watch people play video games, have expanded to more instructional applications including the livestreaming of programming. We are exploring the benefits of streaming platforms, such as twitch and youtube, in education. We have analyzed the follower rates and comment rates for popular streamers that do live programming to highlight trends in this area.</p>
-              </br>
-              <p>Current members: Taylor Eyler, Erica Ferguson, David Liu</p>
-              </br>
-              <p>Project Category: CS Education</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="projectBlock">
-         <div class="container">
-           <div class="project-text">
-               <h3>Unity Mechanics</h3>
-               <p>Unity3D is a popular game engine for independent game developers as well as large game development studios. There are a large number of tutorials to create different types of games in Unity3D. When steps in these tutorials are omitted or accidentally skipped, it is difficult for users to recover as they often do not have a deep understanding of each of the steps. An alternative approach is to create examples of common game mechanics and have developers put these mechanics together for their own game. This approach puts the focus on choosing the correct combination of game mechanics rather than following a template for a game that is difficult to change. We are building a web page of the 100 most common mechanics at <a href="https://t4guw.github.io/100-Unity-Mechanics-for-Programmers/">Unity Mechanics for Programmers</a> with sample implementations located at <a href="https://github.com/t4guw/100-Unity-Mechanics-for-Programmers">GitHub</a></p>
-               </br>
-               <p>Current members: Nick Young</p>
-               </br>
-               <p>Project Category: CS Education</p>
-           </div>
-           <div class="gallery">
-             <a target="blank">
-               <img src="img/source.jpg" alt="students working around a computer" width="360" height="210">
-             </a>
-           </div>
-         </div>
-       </div>
-
-       <div class="projectBlock">
-          <div class="container">
-            <div class="gallery">
-              <a target="blank">
-                <img src="img/learn.jpg" alt="students working around a computer" width="360" height="210">
-              </a>
+            <div class="col-sm-12 col-md-8 col-lg-8 project-text">
+                <h3>Improving Programming Skills through Explanations</h3>
+                <p>Most computer science students have difficulty with technical interviews even though they are familiar with the necessary data structures. As part of this project, students work on problems taken from a popular coding challenge site,
+                    <a href="https://leetcode.com/ ">Leetcode</a>, and create detailed explanations for each of the questions. The solutions are intended not just to solve the problem, but explore different ways of approaching the problem as well as understand
+                    how to tackle similar problems. These lesson plans are being gathered at the T4G <a href="https://stepik.org/course/72339">Stepik Course</a> to be used as a resource for future courses.
+                    </br>
+                    For this project, the preferred programming language is C++, but the explanations are language independent</p>
+                <p>
+                    <b>Current members:</b> Bill Zhao, Boyan Hristov, Jonathan Young, Kez Danielle May, Samuel A. Munford
+                    </br>
+                    <b>Past Members:</b> Isabel Giang, Mitchell Dang, Taylor Eyler
+                    </br>
+                    <b>Project Category:</b> CS Education</p>
             </div>
-            <div class="project-text">
-                <h3>Building a Mind</h3>
-                <p>Inferences, being able to reach a conclusion based on a set of premises, is a crucial step in reasoning. Truth-Maintenance systems can be used to track beliefs as well as the dependencies of these beliefs. A contradiction in this framework requires a revision of beliefs to update the knowledge base. We are building a python based truth-maintenance system to explore different types of reasoning.</p>
-                </br>
-                <p>Current Members: Rachael Kim, Kayla Sprague</p>
-                </br>
-                <p>Past members: Austin Rich</p>
-                </br>
-                <p>Project Category: Artificial Intelligence</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="projectBlock">
-           <div class="container">
-             <div class="project-text">
-                 <h3>Providing Automated Feedback on Programming Assignments</h3>
-                 <p>Providing feedback to novice programmers is critical in helping them develop their skills. Feedback from graders and instructors are often limited due to time constraints. Compiler messages are often difficult to interpret. While there are automated tools that can check for code style, code coverage, perform static analysis etc, these tools are often too difficult for novices to use. We are working on a set of tools that takes advantage of GitHub Actions framework. The tools are embedded within this framework and run automatically when files are uploaded to GitHub. The feedback can be further customized based on instructor preferences or tailored to include multiple input-output tests to be run on specific assignments. The results are displayed via a web page, making it easier for novices to understand the results. We are developing the tools that can be used in future introductory Java courses.</p>
-                 </br>
-                 <p>Current members: Gabe Acuna, Ed Abshire</p>
-                 </br>
-                 <p>Project Category: Artificial Intelligence</p>
-             </div>
-             <div class="gallery">
-               <a target="blank">
-                 <img src="img/students.jpg" alt="students working around a computer" width="360" height="210">
-               </a>
-             </div>
-           </div>
-         </div>
-
-  <div class="scroll-up">
-    <a href="#top"><i class="fa fa-hand-o-up" style="font-size:36px"></i></a>
-  </div>
-
-<footer class="hero-image2">
-    <div class="container">
-        <div class="footer-text">
-             <p>Contact: pisan@uw.edu for more information</p>
         </div>
     </div>
-</footer>
+
+    <div class="container projectBlock">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8 project-text">
+                <h3>Generating Hints for Programming Problems Without a Solution</h3>
+                <p>Providing good quality feedback on programming questions is a challenging task. Intelligent Tutoring Systems that address this problem are built by hand which limits their scope and make them difficult to maintain. In this project, we
+                    explore how hints can be generated automatically using only the problem descriptions. We are experimenting with using a subset of problems taken from <a href="https://leetcode.com/ ">Leetcode</a> as input and using various machine
+                    learning algorithms to classify problems.
+                    </br>
+                </p>
+                <p><b>Current members:</b> Victor Suciu, Isabel Giang, Bill Zhao, Jessica Runandy, Mitchell Dang
+                    </br>
+                    <b>Project Category:</b> Artificial Intelligence</p>
+            </div>
+
+            <a class="col-sm-12 col-md-4 col-lg-4" target="blank">
+                <img src="img/learn.jpg" alt="students working around a computer" width="100%" height="auto">
+            </a>
+
+        </div>
+    </div>
+
+    <div class="container projectBlock">
+        <div class="row">
+            <a class="col-sm-12 col-md-4 col-lg-4" target="blank">
+                <img src="img/students.jpg" alt="students working around a computer" width="100%" height="auto">
+            </a>
+            <div class="col-sm-12 col-md-8 col-lg-8 project-text">
+                <h3>The Evolution of Computer Science Education</h3>
+                <p>Online streaming platforms such as Twitch.tv, while originally created as a form of entertainment for viewers to watch people play video games, have expanded to more instructional applications including the livestreaming of programming.
+                    We are exploring the benefits of streaming platforms, such as twitch and youtube, in education. We have analyzed the follower rates and comment rates for popular streamers that do live programming to highlight trends in this area.</p>
+                </br>
+                <p><b>Current members:</b> Taylor Eyler, Erica Ferguson, David Liu
+                    </br>
+                    <b>Project Category:</b> CS Education</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container projectBlock">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8 project-text">
+                <h3>Unity Mechanics</h3>
+                <p>Unity3D is a popular game engine for independent game developers as well as large game development studios. There are a large number of tutorials to create different types of games in Unity3D. When steps in these tutorials are omitted
+                    or accidentally skipped, it is difficult for users to recover as they often do not have a deep understanding of each of the steps. An alternative approach is to create examples of common game mechanics and have developers put these
+                    mechanics together for their own game. This approach puts the focus on choosing the correct combination of game mechanics rather than following a template for a game that is difficult to change. We are building a web page of the 100
+                    most common mechanics at <a href="https://t4guw.github.io/100-Unity-Mechanics-for-Programmers/">Unity Mechanics for Programmers</a> with sample implementations located at <a href="https://github.com/t4guw/100-Unity-Mechanics-for-Programmers">GitHub</a></p>
+                </br>
+                <p><b>Current members:</b> Nick Young
+                    </br>
+                    <b>Project Category:</b> CS Education</p>
+            </div>
+            <a class="col-sm-12 col-md-4 col-lg-4" target="blank">
+                <img src="img/source.jpg" alt="students working around a computer" width="100%" height="auto">
+            </a>
+
+        </div>
+    </div>
+
+    <div class="container projectBlock">
+        <div class="row">
+            <a class="col-sm-12 col-md-4 col-lg-4" target="blank">
+                <img src="img/learn.jpg" alt="students working around a computer" width="100%" height="auto">
+            </a>
+
+            <div class="col-sm-12 col-md-8 col-lg-8 project-text">
+                <h3>Building a Mind</h3>
+                <p>Inferences, being able to reach a conclusion based on a set of premises, is a crucial step in reasoning. Truth-Maintenance systems can be used to track beliefs as well as the dependencies of these beliefs. A contradiction in this framework
+                    requires a revision of beliefs to update the knowledge base. We are building a python based truth-maintenance system to explore different types of reasoning.</p>
+                </br>
+                <p><b>Current Members:</b> Rachael Kim, Kayla Sprague
+                    </br>
+                    <b>Past members:</b> Austin Rich
+                    </br>
+                    <b>Project Category:</b> Artificial Intelligence</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container projectBlock">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8 project-text">
+                <h3>Providing Automated Feedback on Programming Assignments</h3>
+                <p>Providing feedback to novice programmers is critical in helping them develop their skills. Feedback from graders and instructors are often limited due to time constraints. Compiler messages are often difficult to interpret. While there
+                    are automated tools that can check for code style, code coverage, perform static analysis etc, these tools are often too difficult for novices to use. We are working on a set of tools that takes advantage of GitHub Actions framework.
+                    The tools are embedded within this framework and run automatically when files are uploaded to GitHub. The feedback can be further customized based on instructor preferences or tailored to include multiple input-output tests to be run
+                    on specific assignments. The results are displayed via a web page, making it easier for novices to understand the results. We are developing the tools that can be used in future introductory Java courses.</p>
+                </br>
+                <p><b>Current members:</b> Gabe Acuna, Ed Abshire
+                    </br>
+                    <b>Project Category:</b> Artificial Intelligence</p>
+            </div>
+            <a class="col-sm-12 col-md-4 col-lg-4" target="blank">
+                <img src="img/students.jpg" alt="students working around a computer" width="100%" height="auto">
+            </a>
+
+        </div>
+    </div>
+
+    <div class="scroll-up row container">
+        <a href="#top"><i class="fa fa-hand-o-up center"></i></a>
+    </div>
+
+
+
+    <footer id="sticky-footer" class="py-4 hero-image2 text-white-50">
+        <div class="container text-center col-sm-12 my-auto">
+            <p class="footer-text h2">Contact: pisan@uw.edu for more information</p>
+            <small style="font-size: 1.5vw;">Copyright &copy; T4G</small>
+        </div>
+    </footer>
 
 </body>
 
